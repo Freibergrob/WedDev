@@ -1,0 +1,32 @@
+<html>
+ <head>
+  <title>About Us</title>
+ </head>
+ <body>
+ <p>Parg about CS Club</p>
+ <ul>
+   <li>Luke</li>
+      <ul>
+        <li>discription</li>
+      </ul>
+   <li>Jake</li>
+      <ul>
+        <li>discription</li>
+      </ul>
+   <li>Robbie</li>
+      <ul>
+        <li>discription</li>
+      </ul>
+   <li>Justin</li>
+      <ul>
+        <li>discription</li>
+      </ul>
+ </ul>
+ <h3>Links</h3>
+    <ul>
+      <li>Discord</li>
+      <li>Git</li>
+      <li>CS-Department</li>
+    </ul>
+ </body>
+</html>
