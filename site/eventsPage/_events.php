@@ -1,4 +1,9 @@
 <?php
-    $d = new DateTime('first day of this month', new DateTimeZone("UTC"));
-    echo $d->format('jS, F Y');
+    date_default_timezone_set('Africa/Lagos');
+    include "../php/calendar.php";
+    $date = getdate();
+    $month = $date['mon'];
+    $year = $date['year'];
  ?>
+
+<?=build_calendar($month, $year); ?>
