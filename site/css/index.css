@@ -51,6 +51,7 @@ th.cal-header {
 
 .banner-container {
     background-image: url('../images/bannerc.jpg');
+    background-size: 100%;
     height: 230px;
 }
 
