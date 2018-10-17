@@ -1,0 +1,18 @@
+p.first{
+  text-align: center;
+  font-size: 200%;
+  background-color: rgb(255, 200, 1);
+  padding: 50px;
+}
+p.second{
+  text-align: center;
+  background-color: grey;
+}
+input {
+  color: white;
+  background-color: transparent;
+  border: none;
+  margin-left: 50px;
+  font-size: 125%;
+  padding: 15px;
+}

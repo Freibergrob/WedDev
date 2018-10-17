@@ -6,37 +6,32 @@
 		<meta name="description" content="CS Club">
 		<meta name="keywords" content="IT,Resume,Programming">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/index.css">
 		<title>Computer Science Club</title>
 	</head>
 	<body>
-        <!-- top stuff -->
-        <p>
-            This is always here
+        <?php
+        include "../php/nav.php";
+
+        if (!isset($_GET["nav"])) {
+            $N = getInclude("home");
+        } else {
+            $N = getInclude($_GET["nav"]);
+        }
+
+        ?>
+        <p class="first">
+            UW-Oshkosh Computer <br>
+             Science Club
+        </p>
+        <p class="second">
+            <a href="index.php?nav=home"><input name="Home" type="submit" value="Home"></a>
+            <a href="index.php?nav=about"><input name="about" type="submit" value="About Us"></a>
+            <a href="index.php?nav=events"><input name="Events" type="submit" value="Events"></a>
+            <a href="index.php?nav=account"><input name="Account" type="submit" value="Account"></a>
         </p>
         <div>
-            <a href="index.php?nav=home">Home</a>
-            <a href="index.php?nav=about">About Us</a>
-            <a href="index.php?nav=events">Events</a>
-            <a href="index.php?nav=account">Account</a>
-        </div>
-        <div>
-            <?php
-            if (!isset($_GET["nav"])) {
-                include "home.php";
-            }
-            else if($_GET["nav"] == "home") {
-                include "home.php";
-            }
-            else if ($_GET["nav"] == "about") {
-                include "../aboutUsPage/_aboutUs.php";
-            }
-            else if ($_GET["nav"] == "events") {
-                include "events.php";
-            }
-            else if ($_GET["nav"] == "account") {
-                include "account.php";
-            }
-            ?>
+            <?php include $N ?>
         </div>
         <!-- bottom stuff -->
     </body>
