@@ -2,13 +2,13 @@
 function getInclude($nav) {
     switch($nav) {
         case "home":
-            return "home.php";
+            return "../homePage/_home.php";
         case "about":
             return "../aboutUsPage/_aboutUs.php";
         case "events":
-            return "events.php";
+            return "../eventsPage/_events.php";
         case "account":
-            return "account.php";
+            return "../accountPage/_account.php";
     }
 }
 ?>
