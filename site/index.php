@@ -6,12 +6,12 @@
 		<meta name="description" content="CS Club">
 		<meta name="keywords" content="IT,Resume,Programming">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="../css/index.css">
+        <link rel="stylesheet" href="css/index.css">
 		<title>Computer Science Club</title>
 	</head>
 	<body>
         <?php
-        include "../php/nav.php";
+        include "php/nav.php";
 
         if (!isset($_GET["nav"])) {
             $N = getInclude("home");
