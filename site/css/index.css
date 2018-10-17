@@ -1,12 +1,13 @@
-p.first{
+div.first{
   text-align: center;
   font-size: 200%;
   background-color: rgb(255, 200, 1);
   padding: 50px;
 }
-p.second{
+div.nav{
   text-align: center;
   background-color: grey;
+  margin-top: 5px;
 }
 input {
   color: white;
@@ -36,4 +37,23 @@ tr.cal-week {
 th.cal-header {
   width: 50px;
   background-color: white;
+}
+
+.content-window-events {
+    width: 538px;
+    margin: auto;
+}
+
+.main {
+    width: 80%;
+    margin: auto;
+}
+
+.banner-container {
+    background-image: url('../images/bannerc.jpg');
+    height: 230px;
+}
+
+.logo {
+    margin-left: 10px;
 }
