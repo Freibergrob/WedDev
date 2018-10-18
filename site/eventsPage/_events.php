@@ -1,9 +1,2 @@
-<?php
-    date_default_timezone_set('Africa/Lagos');
-    include "php/calendar.php";
-    $date = getdate();
-    $month = $date['mon'];
-    $year = $date['year'];
- ?>
-
-<?=build_calendar($month, $year); ?>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript" src="js/events.js"></script>

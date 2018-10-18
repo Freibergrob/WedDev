@@ -44,7 +44,7 @@
 		        	<a href="index.php?nav=account"><input name="Account" type="submit" value="Account"></a>
 		    	</div>
 			</div>
-    		<div class=<?= $contentWindowClass ?>>
+    		<div id="content-window" class=<?= $contentWindowClass ?>>
         		<?php include $N ?>
 			</div>
         <!-- bottom stuff -->
