@@ -1,4 +1,4 @@
-<script type="text/javascript">
+<script>
     var url = window.location.href.split("site")[0] + "site/api/createUser.php"
     function submitData() {
         var u = document.getElementById("username").value;
