@@ -73,3 +73,8 @@ a.nav-link:active {
     text-decoration: none;
     color: white;
 }
+
+.wrapper {
+    width: 350px;
+    padding: 20px;
+}

@@ -1,6 +1,6 @@
 <?php
     date_default_timezone_set('Africa/Lagos');
-    include "../php/calendar.php";
+    include "../eventsPage/calendar.php";
 
     if (isset($_POST["m"]) && isset($_POST["y"])) {
         $month = $_POST["m"];

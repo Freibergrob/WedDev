@@ -11,6 +11,8 @@ function getInclude($nav) {
             return "accountPage/_account.php";
         case "login":
             return "loginPage/_login.php";
+        case "signup":
+            return "signupPage/_signup.php";
     }
 }
 ?>
