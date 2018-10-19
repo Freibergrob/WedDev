@@ -29,12 +29,12 @@
 				<div class="logo-wrapper">
 					<div class="logo-float">
 						<a href="index.php">
-							<img src="images/CSIcon.png" width="125px">
+							<img src="images/CSIcon.png" alt="CSIcon" width="125">
 						</a>
 					</div>
 				</div>
 				<div class="banner-container">
-					<img src="images/bannerc.jpg">
+					<img src="images/bannerc.jpg" alt="Banner">
 				</div>
 				<div class="first">
 		        	UW-Oshkosh Computer Science Club
