@@ -1,6 +1,7 @@
 var currDate = new Date();
 var m = currDate.getMonth() + 1;
 var y = currDate.getFullYear();
+var url = window.location.href.split("site")[0] + "site/api/eventsApi.php";
 
 $(document).ready(function() {
     getCal(m,y);
@@ -28,7 +29,7 @@ function setVals(chg) {
 
 function getCal(m,y) {
 	$.ajax({
-        url: "/students/czosea72/site/api/eventsApi.php",
+        url: url,
         type: "POST",
         data: { m: m, y: y},
         async: true,

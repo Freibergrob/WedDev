@@ -9,6 +9,7 @@
         <link rel="stylesheet" href="css/index.css">
 		<link rel="stylesheet" href="css/calendar.css">
 		<link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 		<title>Computer Science Club</title>
 	</head>
 	<body>
@@ -43,7 +44,17 @@
 		        	<a class="nav-link" href="index.php?nav=home">Home</a>
 		        	<a class="nav-link" href="index.php?nav=about">About Us</a>
 		            <a class="nav-link" href="index.php?nav=events">Events</a>
-		        	<a class="nav-link" href="index.php?nav=account">Account</a>
+					<?php
+						if(isset($_SESSION["loggedin"]) && $_SESSION["loggin"] == "true") {
+					?>
+		        		<a class="nav-link" href="index.php?nav=account">Account</a>
+					<?php
+						} else {
+					?>
+						<a class="nav-link" href="index.php?nav=login">Login</a>
+					<?php
+						}
+					?>
 		    	</div>
 			</div>
     		<div id="content-window" class=<?= $contentWindowClass ?>>

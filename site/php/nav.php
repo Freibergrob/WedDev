@@ -9,6 +9,8 @@ function getInclude($nav) {
             return "eventsPage/_events.php";
         case "account":
             return "accountPage/_account.php";
+        case "login":
+            return "loginPage/_login.php";
     }
 }
 ?>
