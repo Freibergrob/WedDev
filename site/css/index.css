@@ -13,38 +13,8 @@ div.nav{
   margin-top: 5px;
 }
 
-input {
-  color: white;
-  background-color: transparent;
-  border: none;
-  margin-left: 50px;
-  font-size: 125%;
-  padding: 15px;
-}
-
-table.cal {
-    border: 1px solid black;
-    border-collapse: collapse;
-    text-align: center;
-}
-
-td.cal-day {
-    border: 1px solid black;
-    width: 75px;
-}
-
-tr.cal-week {
-    border: 1px solid black;
-    height: 105px;
-}
-
-th.cal-header {
-  width: 50px;
-  background-color: white;
-}
-
 .content-window-events {
-    width: 520px;
+    width: 700px;
     margin: auto;
     padding: 10px;
 }
@@ -60,7 +30,7 @@ th.cal-header {
 }
 
 .main-top {
-    margin: 0;
+    margin-bottom: 10px;
     padding: 0;
 }
 
@@ -78,4 +48,28 @@ th.cal-header {
     position: absolute;
     left: 30px;
     clear: both;
+}
+
+a.nav-link {
+    background-color: transparent;
+    border: none;
+    font-size: 125%;
+    padding-left: 40px;
+    padding-right: 40px;
+    font-family: 'Varela Round', sans-serif;
+}
+
+a.nav-link:link, a.nav-link:visited {
+    text-decoration: none;
+    color: white;
+}
+
+a.nav-link:hover {
+    text-decoration: none;
+    color: white;
+}
+
+a.nav-link:active {
+    text-decoration: none;
+    color: white;
 }

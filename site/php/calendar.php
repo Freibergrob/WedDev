@@ -7,11 +7,12 @@ function build_calendar($month,$year) {
      $monthName = $dateComponents['month'];
      $dayOfWeek = $dateComponents['wday'];
      $calendar = "<table class='cal'>";
-     $calendar .= "<caption>";
-     $calendar .= "<button id='monthDown' onclick='setVals(-1)'>-</button>";
-     $calendar .= $monthName . " " . $year;
-     $calendar .= "<button id='monthUp' onclick='setVals(1)'>+</button>";
-     $calendar .= "</caption>";
+     $calendar .= "<tr class='title'>";
+     $calendar .= "<td colspan='2'></td>";
+     $calendar .= "<td class='title' colspan='3'>" . $monthName . " " . $year . "</td>";
+     $calendar .= "<td></td>";
+     $calendar .= "<td><input type='image' src='images/monthchangedown.png' id='monthDown' class='monthleft' onclick='setVals(-1)'>";
+     $calendar .= "<input type='image' src='images/monthchangeup.png' id='monthUp' class='monthright' onclick='setVals(1)'></td>";
      $calendar .= "<tr>";
 
      foreach($daysOfWeek as $day) {

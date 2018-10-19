@@ -28,7 +28,7 @@ function setVals(chg) {
 
 function getCal(m,y) {
 	$.ajax({
-        url: "http://webdev.cs.uwosh.edu/students/czosea72/site/api/eventsApi.php",
+        url: "/students/czosea72/site/api/eventsApi.php",
         type: "POST",
         data: { m: m, y: y},
         async: true,

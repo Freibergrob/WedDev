@@ -1,0 +1,46 @@
+table.cal {
+    border-collapse: collapse;
+    text-align: center;
+}
+
+tr.title {
+    height: 75px;
+}
+
+td.title {
+    font-size: 36px;
+}
+
+td.cal-day {
+    border: 1px solid black;
+    width: 100px;
+}
+
+tr.cal-week {
+    border: 1px solid black;
+    height: 105px;
+}
+
+th.cal-header {
+    font-size: 200%;
+    width: 50px;
+    background-color: white;
+}
+
+caption.header {
+    margin-bottom: 5px;
+}
+
+input.monthleft, input.monthright {
+    border: 2px solid black;
+    border-radius: 6px;
+    height: 25px;
+    transition-duration: 0.4s;
+    margin-left: 3px;
+    margin-right: 3px;
+}
+
+input.monthleft:hover, input.monthright:hover {
+    background-color: rgb(255, 200, 1);
+    color: white;
+}
