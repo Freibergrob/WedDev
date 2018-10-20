@@ -23,7 +23,6 @@
             $N = getInclude($_GET["nav"]);
 			$contentWindowClass = "content-window-" . $_GET["nav"];
         }
-
     	?>
 		<div class="main">
 			<div class="main-top">

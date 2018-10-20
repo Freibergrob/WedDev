@@ -4,7 +4,7 @@
     if($_SERVER["REQUEST_METHOD"] == "POST") {
         /*
             The login process:
-            validate inputs
+            sanitize and validate inputs
             get user from database
             compare Password
             set session values

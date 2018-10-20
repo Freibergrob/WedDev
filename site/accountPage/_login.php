@@ -1,3 +1,6 @@
+<!--
+    Form needs to be styled
+-->
 <form action="index.php?nav=account" method="post">
     <div class="wrapper">
         <h2>Login</h2>

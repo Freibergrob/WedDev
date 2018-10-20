@@ -1,5 +1,6 @@
 <?php
-    date_default_timezone_set('Africa/Lagos');
+
+    date_default_timezone_set('America/Chicago');
     include "../eventsPage/calendar.php";
 
     if (isset($_POST["m"]) && isset($_POST["y"])) {
