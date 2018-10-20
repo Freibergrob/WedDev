@@ -1,3 +1,7 @@
+<!--
+    Form needs to be styled
+    Move Javascript to eternal file
+-->
 <script>
     var url = window.location.href.split("site")[0] + "site/api/createUser.php"
     function submitData() {
