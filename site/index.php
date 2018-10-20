@@ -44,17 +44,7 @@
 		        	<a class="nav-link" href="index.php?nav=home">Home</a>
 		        	<a class="nav-link" href="index.php?nav=about">About Us</a>
 		            <a class="nav-link" href="index.php?nav=events">Events</a>
-					<?php
-						if(isset($_SESSION["loggedin"]) && $_SESSION["loggin"] == "true") {
-					?>
-		        		<a class="nav-link" href="index.php?nav=account">Account</a>
-					<?php
-						} else {
-					?>
-						<a class="nav-link" href="index.php?nav=login">Login</a>
-					<?php
-						}
-					?>
+	        		<a class="nav-link" href="index.php?nav=account">Account</a>
 		    	</div>
 			</div>
     		<div id="content-window" class=<?= $contentWindowClass ?>>
