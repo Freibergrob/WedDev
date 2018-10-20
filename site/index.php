@@ -6,6 +6,7 @@
 		<meta name="description" content="CS Club">
 		<meta name="keywords" content="IT,Social,Programming">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name=“robots” content=“noindex, nofollow” />
         <link rel="stylesheet" href="css/index.css">
 		<link rel="stylesheet" href="css/events.css">
 		<link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
@@ -49,7 +50,11 @@
     		<div id="content-window" class=<?= $contentWindowClass ?>>
         		<?php include $N ?>
 			</div>
-        <!-- bottom stuff -->
+        	</p>
+				Disclaimer: This site is under development by UW-Oshkosh students as a prototype for
+				the organization UWO Computer Science Club.<br>
+				Nothing on the site should be construed in any way as being officially connected with
+				or representative of UWO Computer Science Club.
 		</div>
     </body>
 </html>
