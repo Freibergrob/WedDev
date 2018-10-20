@@ -7,7 +7,7 @@
 		<meta name="keywords" content="IT,Resume,Programming">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/index.css">
-		<link rel="stylesheet" href="css/calendar.css">
+		<link rel="stylesheet" href="css/events.css">
 		<link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 		<title>Computer Science Club</title>
