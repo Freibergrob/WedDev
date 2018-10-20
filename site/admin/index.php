@@ -16,9 +16,9 @@
     }
 
     if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true) {
-        include "accountPage/_loggedin.php";
+        include "adminPanel.php";
     } else {
-        $formPostUrl = "index.php?nav=account";
-        include "accountPage/_login.php";
+        $formPostUrl = "adminPanel.php";
+        include "../accountPage/_login.php";
     }
  ?>

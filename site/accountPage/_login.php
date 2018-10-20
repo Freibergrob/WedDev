@@ -1,7 +1,7 @@
 <!--
     Form needs to be styled
 -->
-<form action="index.php?nav=account" method="post">
+<form action=<?=$formPostUrl ?> method="post">
     <div class="wrapper">
         <h2>Login</h2>
         <p>Please fill in your credentials to login.</p>

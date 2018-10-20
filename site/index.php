@@ -4,7 +4,7 @@
 		<meta charset="UTF-8">
 		<meta name="author" content="The Group">
 		<meta name="description" content="CS Club">
-		<meta name="keywords" content="IT,Resume,Programming">
+		<meta name="keywords" content="IT,Social,Programming">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/index.css">
 		<link rel="stylesheet" href="css/events.css">
