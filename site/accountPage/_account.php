@@ -2,23 +2,16 @@
     session_start();
 
     if($_SERVER["REQUEST_METHOD"] == "POST") {
-        /*
-            The login process:
-            sanitize and validate inputs
-            get user from database
-            compare Password
-            set session values
-        */
-        $_SESSION["loggedin"] = true;
-        $_SESSION["id"] = "you";
-        $_SESSION["username"] = "username";
-        $_SESSION["role"] = 3;
+        require_once "database/config.php";
+        require_once "database/user.php";
+        include "php/loginProcess.php";
     }
 
     if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true) {
         include "accountPage/_loggedin.php";
     } else {
         $formPostUrl = "index.php?nav=account";
+        $showSignup = true;
         include "accountPage/_login.php";
     }
  ?>

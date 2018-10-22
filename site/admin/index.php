@@ -1,24 +1,16 @@
 <?php
     session_start();
-
+    require_once "../database/config.php";
+    require_once "../database/user.php";
     if($_SERVER["REQUEST_METHOD"] == "POST") {
-        /*
-            The login process:
-            sanitize and validate inputs
-            get user from database
-            compare Password
-            set session values
-        */
-        $_SESSION["loggedin"] = true;
-        $_SESSION["id"] = "you";
-        $_SESSION["username"] = "username";
-        $_SESSION["role"] = 3;
+        include "../php/loginProcess.php";
     }
 
-    if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true) {
+    if(isset($_SESSION["loggedin"]) && isset($_SESSION["role"]) && $_SESSION["loggedin"] === true && $_SESSION["role"] == 3) {
         include "adminPanel.php";
     } else {
-        $formPostUrl = "adminPanel.php";
+        $formPostUrl = "index.php";
+        $showSignup = false;
         include "../accountPage/_login.php";
     }
  ?>

@@ -18,6 +18,12 @@
         <div class="form-group">
             <input type="submit" class="btn btn-primary" value="Login">
         </div>
-        <p>Don't have an account? <a href="index.php?nav=signup">Sign up now</a>.</p>
+        <?php
+            if($showSignup){
+        ?>
+            <p>Don't have an account? <a href="index.php?nav=signup">Sign up now</a>.</p>
+        <?php
+        }
+        ?>
     </div>
 </form>
