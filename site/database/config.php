@@ -6,10 +6,10 @@
     define('DB_PASSWORD', 'dbPass');
     define('DB_NAME', 'czosea72');
 
-    $link = mysqli_connect(DB_SERVER, DB_USERNAME, DB_PASSWORD, DB_NAME);
+    $link = new PDO("mysql:dbname=" . DB_NAME . ";host=" . DB_SERVER, DB_USERNAME, DB_PASSWORD);
 
     if($link === false) {
-        die("ERROR: Could not connect. " . mysqli_connect_error());
+        echo "connection failure";
     }
 
     function getConfig() {

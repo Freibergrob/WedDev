@@ -2,47 +2,27 @@
     require_once "config.php";
 
     function insertUser($u, $ph, $link) {
-        $sql = "INSERT INTO users (username, password) VALUES (?,?)";
+        $user = $link->quote($u);
+        $pass = $link->quote($ph);
 
-        if($stmt = mysqli_prepare($link, $sql)){
-            $result = array();
-            mysqli_stmt_bind_param($stmt, "ss", $param_username, $param_password);
-            $param_username = $u;
-            $param_password = $ph;
+        $sql = "INSERT INTO users (username, password) VALUES ($user,$pass)";
 
-            if(mysqli_stmt_execute($stmt)){
-                $result["success"] = "true";
-            } else{
-                $result["error"] = "SQL ERROR";
-                $result["success"] = "false";
-            }
-        }
+        $link->exec($sql);
+
+        //Error Handle This
     }
 
     function getUser($u, $link) {
-        $sql = "SELECT id, username, password, role FROM users WHERE username = ?";
-
-        if($stmt = mysqli_prepare($link, $sql)){
-            $result = array();
-            mysqli_stmt_bind_param($stmt, "s", $param_username);
-            $param_username = $u;
-
-            if(mysqli_stmt_execute($stmt)){
-                mysqli_stmt_store_result($stmt);
-                if (mysqli_stmt_num_rows($stmt) == 1) {
-                    mysqli_stmt_bind_result($stmt, $id, $username, $hashed_password, $role);
-                    mysqli_stmt_fetch($stmt);
-                    $result["id"] = $id;
-                    $result["user"] = $username;
-                    $result["password"] = $hashed_password;
-                    $result["role"] = $role;
-                } else {
-
-                }
-            } else {
-                $result["error"] = "SQL ERROR";
+        $result = array();
+        $user = $link->quote($u);
+        $sql = "SELECT id, username, password, role FROM users WHERE username = $user";
+        $query = $link->query($sql);
+            foreach($query as $row) {
+                $result["id"] = $row["id"];
+                $result["user"] = $row["username"];
+                $result["role"] = $row["role"];
+                $result["password"] = $row["password"];
             }
-        }
         return $result;
     }
  ?>

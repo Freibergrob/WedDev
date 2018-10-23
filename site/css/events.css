@@ -20,6 +20,8 @@ td.title {
 td.cal-day {
     border: 1px solid black;
     width: 100px;
+    vertical-align: bottom;
+    font-weight: bold;
 }
 
 tr.cal-week {
@@ -30,7 +32,6 @@ tr.cal-week {
 th.cal-header {
     font-size: 200%;
     width: 50px;
-    background-color: white;
 }
 
 caption.header {

@@ -1,49 +1,41 @@
 <!--
-    Form needs to be styled
-    Move Javascript to eternal file
+    Handle Validations in Javascript
+    - Password and Confirm Mismatch
+    - Ajax call to check if username taken
 -->
-<script>
-    var url = window.location.href.split("site")[0] + "site/api/createUser.php"
-    function submitData() {
-        var u = document.getElementById("username").value;
-        var p = document.getElementById("password").value;
-        $.ajax({
-            url: url,
-            type: "POST",
-            data: { u: u, p: p},
-            async: true,
-            dataType: "json",
-            success: function(response) {
-                alert(response);
-            },
-            error: function(error) {
-                alert("error");
-            }
-        })
-    }
-</script>
-
-<div class="wrapper">
-    <h2>Sign Up</h2>
-    <p>Please fill this form to create an account.</p>
-    <div class="form-group">
-        <label>Username</label>
-        <input id="username" type="text" name="username" class="form-control">
-        <span class="help-block">Placeholder</span>
+<?php
+if($_SERVER["REQUEST_METHOD"] == "POST") {
+    require_once "database/config.php";
+    require_once "database/user.php";
+    require_once "php/createUser.php";
+} else {
+?>
+<form action="index.php?nav=signup" method="post">
+    <div class="wrapper">
+        <h2>Sign Up</h2>
+        <p>Please fill this form to create an account.</p>
+        <div class="form-group">
+            <label>Username</label>
+            <input id="username" type="text" name="username" class="form-control" required>
+            <span class="help-block">Placeholder</span>
+        </div>
+        <div class="form-group">
+            <label>Password</label>
+            <input id="password" type="password" name="password" class="form-control" required>
+            <span class="help-block">Placeholder</span>
+        </div>
+        <div class="form-group">
+            <label>Confirm Password</label>
+            <input id="confirm_password" type="password" name="confirm_password" class="form-control" required>
+            <span class="help-block">Placeholder</span>
+        </div>
+        <div class="form-group">
+            <input type="submit" class="btn btn-primary" value="Register">
+            <input type="reset" class="btn btn-default" value="Reset">
+        </div>
+        <p>Already have an account? <a href="index.php?nav=account">Login here</a>.</p>
     </div>
-    <div class="form-group">
-        <label>Password</label>
-        <input id="password" type="password" name="password" class="form-control">
-        <span class="help-block">Placeholder</span>
-    </div>
-    <div class="form-group">
-        <label>Confirm Password</label>
-        <input type="password" name="confirm_password" class="form-control">
-        <span class="help-block">Placeholder</span>
-    </div>
-    <div class="form-group">
-        <input type="button" onclick="submitData()" class="btn btn-primary" value="Register">
-        <input type="reset" class="btn btn-default" value="Reset">
-    </div>
-    <p>Already have an account? <a href="loginPage/_login.php">Login here</a>.</p>
-</div>
+</form>
+<?php
+}
+ ?>
