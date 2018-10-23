@@ -11,6 +11,7 @@
 		<link rel="stylesheet" href="css/events.css">
 		<link rel="stylesheet" href="css/aboutUsPage.css">
 		<link rel="stylesheet" href="css/account.css">
+		<link rel="stylesheet" href="css/home.css">
 		<link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 		<title>Computer Science Club</title>
