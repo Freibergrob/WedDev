@@ -2,11 +2,13 @@ form{
   width: 80%;
   margin: 0 auto;
 }
+
 .wrapper{
   background-color: white;
   padding: 10px;
   margin: auto;
 }
+
 h2{
   text-align: center;
 }
@@ -14,8 +16,8 @@ h2{
 
 label {
     display: inline-block;
-    width: 50px;
-    text-align: right;
+    width: 150px;
+    text-align: left;
     margin-right: 8px;
 }
 
@@ -28,6 +30,7 @@ input[type=text], select, input[type=password] {
    box-sizing: border-box;
 
 }
+
 input[type=submit] {
    width: 200px;
    background-color: black;
@@ -38,9 +41,11 @@ input[type=submit] {
    border-radius: 4px;
    cursor: pointer;
 }
+
 .button{
   text-align: center;
 }
+
 p{
   text-align: center;
 }

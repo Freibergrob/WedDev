@@ -17,21 +17,17 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
         <div class="form-group">
             <label>Username</label>
             <input id="username" type="text" name="username" class="form-control" required>
-            <span class="help-block">Placeholder</span>
         </div>
         <div class="form-group">
             <label>Password</label>
             <input id="password" type="password" name="password" class="form-control" required>
-            <span class="help-block">Placeholder</span>
         </div>
         <div class="form-group">
-            <label>Confirm Password</label>
+            <label class="confirm_password">Confirm Password</label>
             <input id="confirm_password" type="password" name="confirm_password" class="form-control" required>
-            <span class="help-block">Placeholder</span>
         </div>
-        <div class="form-group">
+        <div class="form-group button">
             <input type="submit" class="btn btn-primary" value="Register">
-            <input type="reset" class="btn btn-default" value="Reset">
         </div>
         <p>Already have an account? <a href="index.php?nav=account">Login here</a>.</p>
     </div>
