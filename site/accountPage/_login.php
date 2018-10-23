@@ -1,6 +1,7 @@
 <!--
     Form needs to be styled
 -->
+
 <form action=<?=$formPostUrl ?> method="post">
     <div class="wrapper">
         <h2>Login</h2>
@@ -8,14 +9,12 @@
         <div class="form-group">
             <label>Username</label>
             <input type="text" name="username" class="form-control">
-            <span class="help-block">Placeholder</span>
         </div>
         <div class="form-group">
             <label>Password</label>
             <input type="password" name="password" class="form-control">
-            <span class="help-block">Placeholder</span>
         </div>
-        <div class="form-group">
+        <div class="button">
             <input type="submit" class="btn btn-primary" value="Login">
         </div>
         <?php
