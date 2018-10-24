@@ -76,7 +76,7 @@ a.nav-link:active {
 body{
   background-image: url(https://www.uwosh.edu/computer_science/background.jpg);
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: top;
   background-color: #d79a27;
   padding-top: 38px;
 }
