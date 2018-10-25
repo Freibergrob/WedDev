@@ -3,13 +3,9 @@ $user = array();
 $user = getUser($_POST["username"], $link);
 
 if(isset($user["Error"])) {
-    ?>
-        <p>An Error Occured!<p>
-    <?php
+    $loginerror = "Authenication Failure!";
 } else if(!isset($user["user"]) || !isset($user["password"]) || !isset($user["role"]) || $user["password"] == crypt($_POST["password"], $user["password"])) {
-    ?>
-        <p>Authentication Failure!
-    <?php
+    $loginerror = "Authenication Failure!";
 } else  {
     $_SESSION["loggedin"] = true;
     $_SESSION["id"] = $user["id"];

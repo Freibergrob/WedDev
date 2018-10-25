@@ -8,13 +8,14 @@
         <p>Please fill in your credentials to login.</p>
         <div class="form-group">
             <label>Username</label>
-            <input type="text" name="username" class="form-control">
+            <input type="text" name="username" class="form-control" required>
         </div>
         <div class="form-group">
             <label>Password</label>
-            <input type="password" name="password" class="form-control">
+            <input type="password" name="password" class="form-control" required>
         </div>
         <div class="button">
+            <p><strong><?=$loginerror ?><strong></p>
             <input type="submit" class="btn btn-primary" value="Login">
         </div>
         <?php

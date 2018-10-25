@@ -1,5 +1,6 @@
 <?php
     session_start();
+    $loginerror = "";
 
     if($_SERVER["REQUEST_METHOD"] == "POST") {
         require_once "database/config.php";

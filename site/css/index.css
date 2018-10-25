@@ -1,4 +1,4 @@
-div.first{
+div.first {
   text-align: center;
   vertical-align: middle;
   font-size: 200%;
@@ -7,7 +7,7 @@ div.first{
   padding-top: 10px;
 }
 
-div.nav{
+div.nav {
   text-align: center;
   background-color: grey;
   margin-top: 5px;
@@ -73,7 +73,7 @@ a.nav-link:active {
     width: 350px;
     padding: 20px;
 }
-body{
+body {
   background-image: url(https://www.uwosh.edu/computer_science/background.jpg);
   background-repeat: no-repeat;
   background-position: top;
