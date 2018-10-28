@@ -3,12 +3,24 @@
   padding: 10px;
 }
 .aboutUs{
-  background-color: white;
+  background-color: #d79a27;
   margin: auto;
   padding: 10px;
 }
 h1{
+  text-decoration: underline;
+  font-size: 125%;
+  font-family: 'Varela Round', sans-serif;
+  color: black;
+}
+h2{
   background-color: black;
   text-align: center;
   color: white;
+  font-family: 'Varela Round', sans-serif;
+}
+P{
+  font-size: 125%;
+  font-family: 'Varela Round', sans-serif;
+  color: black;
 }

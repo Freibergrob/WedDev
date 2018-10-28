@@ -1,8 +1,16 @@
 
 <link rel="stylesheet" href="css/index.css">
 <div class = "aboutUs">
-  <p>Parg about CS Club</p>
-  <h1>Officers</h1>
+<h1><strong>About</strong></h1>
+  <p>The Computer Science club at the University of Wisconsin Oshkosh is a student-run
+      organization, which is dedicated to creating and maintaining a tight-knit community of
+      friends and mentors to promote and advocate Computer Science. Within this community,
+      we aim to provide many professional resources for our members including, school-
+      sponsored informational and networking events, social outings, tech workshops, games,
+      collaborative projects, programming competitions, and more. So, come and explore
+      different areas of interest that the field Computer Science has to offer, while creating
+      an atmosphere for networking and making friends.</p>
+  <h2>Officers</h2>
   <ul>
       <li>Luke
           <ul>
