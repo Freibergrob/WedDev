@@ -13,7 +13,7 @@ h1{
   font-family: 'Varela Round', sans-serif;
   color: black;
 }
-h2{
+h2, h3{
   background-color: black;
   text-align: center;
   color: white;
@@ -23,4 +23,8 @@ P{
   font-size: 125%;
   font-family: 'Varela Round', sans-serif;
   color: black;
+}
+.links{
+  text-align: center;
+  padding-right: 50px;
 }

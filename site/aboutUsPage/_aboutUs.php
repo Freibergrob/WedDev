@@ -34,9 +34,16 @@
       </li>
   </ul>
   <h3>Links</h3>
-  <ul>
-      <li>Discord</li>
-      <li>Git</li>
-      <li>CS-Department</li>
+        <div class = "links">
+          <a href = "https://discord.gg/VxBYHqR" target = "_blank">
+                <img src="images/discordIcon.png" alt="Discord icon" title = "Discord" width ="125">
+          </a>
+          <a href = "https://github.com/UWO-CS-Club" target = "_blank">
+                <img src="images/gitIcon.png" alt="GitHub icon" title = "GitHub" width ="125">
+          </a>
+        <a href = "https://www.uwosh.edu/computer_science/" target = "_blank">
+                <img src="images/oshkoshIcon.jpg" alt="UWO icon" title = "UWO" width ="125">
+        </a>
+        </div>
   </ul>
 </div>
