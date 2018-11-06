@@ -4,13 +4,16 @@ form{
 }
 
 .wrapper{
-  background-color: white;
+  background-color: rgb(236, 177, 14);
   padding: 10px;
   margin: auto;
+  font-family: 'Varela Round', sans-serif;
+  font-size: 125%;
 }
 
 h2{
   text-align: center;
+  
 }
 
 
@@ -40,6 +43,8 @@ input[type=submit] {
    border: none;
    border-radius: 4px;
    cursor: pointer;
+   font-family: 'Varela Round', sans-serif;
+  font-size: 125%;
 }
 
 .button{
