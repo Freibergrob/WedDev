@@ -14,7 +14,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
 <form action="index.php?nav=signup" method="post" onsubmit="return validate()">
     <div class="wrapper">
         <h2>Sign Up</h2>
-        <p>Please fill this form to create an account.</p>
+        <p class="login">Please fill this form to create an account.</p>
         <div class="form-group">
             <label>Username</label>
             <input id="username" type="text" name="username" class="form-control" required>
@@ -33,7 +33,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
         <div class="form-group button">
             <input type="submit" class="btn btn-primary" value="Register">
         </div>
-        <p>Already have an account? <a href="index.php?nav=account">Login here</a>.</p>
+        <p class="login">Already have an account? <a href="index.php?nav=account">Login here</a>.</p>
     </div>
 </form>
 <?php

@@ -7,21 +7,34 @@
   margin: auto;
   padding: 10px;
 }
-
-h1,h2,h3{
+h2{
   background-color: black;
   font-size: 125%;
   text-align: center;
   color: white;
   font-family: 'Varela Round', sans-serif;
 }
-P{
+.discripton, .aboutUs{
   font-size: 125%;
   font-family: 'Varela Round', sans-serif;
   color: black;
   align-content: left;
 }
+li{
+  font-size: 100%;
+  font-family: 'Varela Round', sans-serif;
+  color: black;
+}
+p.aboutUsPar, .listBorder{
+  border-style: solid;
+  border-color: black;
+  border-width: 2px;
+}
 .links{
-  text-align: center;
+  display: inline-block;
   padding-right: 50px;
+  text-align: center;
+}
+.image{
+  border-radius: 50%;
 }

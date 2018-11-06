@@ -2,9 +2,9 @@
     require_once "config.php";
 
     function getEventsByMonth($dateMin, $dateMax, $link) {
-        $month = $link->quote($m);
-        $year = $link->quote($y);
-        $sql = "SELECT id, title, password, eDate, description, createdby FROM events WHERE eDate BETWEEN $dateMin AND $dateMax";
+        $month = $link->quote($dateMin);
+        $year = $link->quote($dateMax);
+        $sql = "SELECT * FROM events";
         $query = $link->query($sql);
         return $query;
     }
