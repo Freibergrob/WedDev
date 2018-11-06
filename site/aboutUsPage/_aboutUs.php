@@ -1,8 +1,8 @@
 
 <link rel="stylesheet" href="css/index.css">
 <div class = "aboutUs">
-<h1><strong>About</strong></h1>
-  <p>The Computer Science club at the University of Wisconsin Oshkosh is a student-run
+<h2>About</h2>
+  <p class = "aboutUsPar">The Computer Science club at the University of Wisconsin Oshkosh is a student-run
       organization, which is dedicated to creating and maintaining a tight-knit community of
       friends and mentors to promote and advocate Computer Science. Within this community,
       we aim to provide many professional resources for our members including, school-
@@ -12,39 +12,64 @@
       an atmosphere for networking and making friends.
     </p>
   <h2>Officers</h2>
-  <ul>
-      <li>Luke
+  <ul class = "listBorder">
+
+      <li>President: Jake
           <ul>
               <li>description</li>
           </ul>
       </li>
-      <li>Jake
+      <li>Vice President: Justing Espiritu
           <ul>
               <li>description</li>
           </ul>
       </li>
-      <li>Robbie
+      <li>Treasurer: Robbie Freiberg
+          <ul>
+              <li><p>Hello, I am Robbie and I am the Treasurer of the Computer Science Club.
+                Some of my hobbies in clube playing video games and playing Magic the Gathering.<p></li>
+          </ul>
+      </li>
+      <li>Secretary: Sarah
           <ul>
               <li>description</li>
           </ul>
       </li>
-      <li>Justin
+      <li>Co-Secretary: Esteban
           <ul>
               <li>description</li>
+          </ul>
+      </li>
+      <li>Public Relations: Erik Freiberg
+          <ul>
+            <li><p>I am Erik Freiberg, the Public Relations Officer of the Computer Science Club.
+                   I love spending my free time either watching or playing sports such as, basketball,
+                   baseball and football.</p></li>
+          </ul>
+    </li>
+      <li>OSA Representive: Bryce
+          <ul>
+            <li>description</li>
           </ul>
       </li>
   </ul>
-  <h3>Links</h3>
+  <h2>Links</h2>
         <div class = "links">
           <a href = "https://discord.gg/VxBYHqR" target = "_blank">
-                <img src="images/discordIcon.png" alt="Discord icon" title = "Discord" width ="125">
+                <img class = "image" src="images/discordIcon.png" alt="Discord icon" title = "Discord" width ="125">
           </a>
-          <a href = "https://github.com/UWO-CS-Club" target = "_blank">
-                <img src="images/gitIcon.png" alt="GitHub icon" title = "GitHub" width ="125">
-          </a>
-        <a href = "https://www.uwosh.edu/computer_science/" target = "_blank">
-                <img src="images/oshkoshIcon.jpg" alt="UWO icon" title = "UWO" width ="125">
-        </a>
+          <span><p class = "discripton">Discord</p></span>
         </div>
-  </ul>
+        <div class = "links">
+          <a href = "https://github.com/UWO-CS-Club" target = "_blank">
+                <img class = "image" src="images/gitIcon.png" alt="GitHub icon" title = "GitHub" width ="125">
+          </a>
+          <span><p class = "discripton">GitHub</p></span>
+        </div>
+        <div class = "links">
+        <a href = "https://www.uwosh.edu/computer_science/" target = "_blank">
+                <img class = "image" src="images/oshkoshIcon.jpg" alt="UWO icon" title = "UWO" width ="125">
+        </a>
+        <span><p class = "discripton">Computer Science</p></span>
+        </div>
 </div>
