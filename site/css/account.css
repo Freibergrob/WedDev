@@ -53,6 +53,9 @@ input[type=submit] {
 
 p.login {
   text-align: center;
+  font-family: 'Varela Round', sans-serif;
+  font-size: 125%;
+ 
 }
 
 p.error {
