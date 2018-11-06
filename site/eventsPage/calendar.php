@@ -2,12 +2,19 @@
 function build_calendar($month,$year) {
     require_once "../database/event.php";
 
-    $firstDayOfMonth = mktime(0,0,0,$month,1,$year);
-    $lastDayOfMonth = $firstDayOfMonth;
-    $lastDayOfMonth->modify('last day of this month');
+     $firstDayOfMonth = mktime(0,0,0,$month,1,$year);
+     $lastDay = date('t',$firstDayOfMonth);
+     $lastDayOfMonth = mktime(0,0,0,$month,$lastDay,$year);
 
-    $events = getEventsByMonth($firstDayOfMonth,$lastDayOfMonth,$link);
-
+     $events = getEventsByMonth($firstDayOfMonth,$lastDayOfMonth,$link);
+     $calendar = "";
+     foreach($events as $event) {
+ 		$calendar  .= "<p>" . $event['id'] . "</p>";
+        $calendar  .= "<p>" . $event['title'] . "</p>";
+        $calendar  .= "<p>" . $event['eDate'] . "</p>";
+        $calendar  .= "<p>" . $event['description'] . "</p>";
+        $calendar  .= "<p>" . $event['createdby'] . "</p>";
+     }
 
      $daysOfWeek = array('S','M','T','W','T','F','S');
 
@@ -15,7 +22,7 @@ function build_calendar($month,$year) {
      $dateComponents = getdate($firstDayOfMonth);
      $monthName = $dateComponents['month'];
      $dayOfWeek = $dateComponents['wday'];
-     $calendar = "<table class='cal'>";
+     $calendar .= "<table class='cal'>";
      $calendar .= "<tr class='title'>";
      $calendar .= "<td colspan='2'></td>";
      $calendar .= "<td class='title' colspan='3'>" . $monthName . " " . $year . "</td>";
