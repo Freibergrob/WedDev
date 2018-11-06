@@ -61,7 +61,7 @@ a.nav-link:link, a.nav-link:visited {
 
 a.nav-link:hover {
     text-decoration: none;
-    color: #3f2b07;
+    color: white;
 }
 
 a.nav-link:active {
@@ -79,4 +79,7 @@ body {
   background-position: top;
   background-color: #d79a27;
   padding-top: 38px;
+}
+div.disclaimer{
+    text-align: center;
 }

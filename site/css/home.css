@@ -2,3 +2,18 @@
   margin: auto;
   padding: 10px;
 }
+div.homeContent{
+  text-align: center;
+}
+h3{
+  font-weight: bold;
+}
+p{
+  padding: 25px;
+  border-style: solid;
+  border-color: black;
+  border-width: 2px;
+}
+a{
+  text-decoration: none;
+}
