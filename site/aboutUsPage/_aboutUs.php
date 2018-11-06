@@ -9,7 +9,8 @@
       sponsored informational and networking events, social outings, tech workshops, games,
       collaborative projects, programming competitions, and more. So, come and explore
       different areas of interest that the field Computer Science has to offer, while creating
-      an atmosphere for networking and making friends.</p>
+      an atmosphere for networking and making friends.
+    </p>
   <h2>Officers</h2>
   <ul>
       <li>Luke

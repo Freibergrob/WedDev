@@ -7,14 +7,10 @@
   margin: auto;
   padding: 10px;
 }
-h1{
-  text-decoration: underline;
-  font-size: 125%;
-  font-family: 'Varela Round', sans-serif;
-  color: black;
-}
-h2, h3{
+
+h1,h2,h3{
   background-color: black;
+  font-size: 125%;
   text-align: center;
   color: white;
   font-family: 'Varela Round', sans-serif;
@@ -23,6 +19,7 @@ P{
   font-size: 125%;
   font-family: 'Varela Round', sans-serif;
   color: black;
+  align-content: left;
 }
 .links{
   text-align: center;
