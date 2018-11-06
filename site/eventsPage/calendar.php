@@ -1,7 +1,16 @@
 <?php
 function build_calendar($month,$year) {
+    require_once "../database/event.php";
+
+    $firstDayOfMonth = mktime(0,0,0,$month,1,$year);
+    $lastDayOfMonth = $firstDayOfMonth;
+    $lastDayOfMonth->modify('last day of this month');
+
+    $events = getEventsByMonth($firstDayOfMonth,$lastDayOfMonth,$link);
+
+
      $daysOfWeek = array('S','M','T','W','T','F','S');
-     $firstDayOfMonth = mktime(0,0,0,$month,1,$year);
+
      $numberDays = date('t',$firstDayOfMonth);
      $dateComponents = getdate($firstDayOfMonth);
      $monthName = $dateComponents['month'];
