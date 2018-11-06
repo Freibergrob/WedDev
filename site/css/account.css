@@ -44,7 +44,7 @@ input[type=submit] {
    border-radius: 4px;
    cursor: pointer;
    font-family: 'Varela Round', sans-serif;
-  font-size: 125%;
+   font-size: 125%;
 }
 
 .button{
@@ -53,4 +53,10 @@ input[type=submit] {
 
 p.login {
   text-align: center;
+}
+
+p.error {
+  font-family: 'Varela Round', sans-serif;
+  font-size: 125%;
+  color: red;
 }

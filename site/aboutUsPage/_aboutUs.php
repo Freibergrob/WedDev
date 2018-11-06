@@ -1,7 +1,7 @@
 
 <link rel="stylesheet" href="css/index.css">
 <div class = "aboutUs">
-<h1><strong>About</strong></h1>
+<h1><strong>About Us</strong></h1>
   <p>The Computer Science club at the University of Wisconsin Oshkosh is a student-run
       organization, which is dedicated to creating and maintaining a tight-knit community of
       friends and mentors to promote and advocate Computer Science. Within this community,
