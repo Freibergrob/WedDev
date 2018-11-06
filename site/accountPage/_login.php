@@ -5,7 +5,7 @@
 <form action=<?=$formPostUrl ?> method="post">
     <div class="wrapper">
         <h2>Login</h2>
-        <p>Please fill in your credentials to login.</p>
+        <p class="login">Please fill in your credentials to login.</p>
         <div class="form-group">
             <label>Username</label>
             <input type="text" name="username" class="form-control" required>
@@ -21,7 +21,7 @@
         <?php
             if($showSignup){
         ?>
-            <p>Don't have an account? <a href="index.php?nav=signup">Sign up now</a>.</p>
+            <p class="login">Don't have an account? <a href="index.php?nav=signup">Sign up now</a>.</p>
         <?php
         }
         ?>
