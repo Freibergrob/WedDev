@@ -15,7 +15,7 @@
             <input type="password" name="password" class="form-control" required>
         </div>
         <div class="button">
-            <p class="error"><strong><?=$loginerror ?><strong></p>
+            <p class="error"><strong><?=$loginerror ?></strong></p>
             <input type="submit" class="btn btn-primary" value="Login">
         </div>
         <?php
