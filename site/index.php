@@ -53,11 +53,12 @@
     		<div id="content-window" class=<?= $contentWindowClass ?>>
         		<?php include $N ?>
 			</div>
-        	</p>
+        	<p>
 				Disclaimer: This site is under development by UW-Oshkosh students as a prototype for
 				the organization UWO Computer Science Club.<br>
 				Nothing on the site should be construed in any way as being officially connected with
 				or representative of UWO Computer Science Club.
+			</p>
 		</div>
     </body>
 </html>

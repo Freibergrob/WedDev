@@ -6,7 +6,7 @@ function build_calendar($month,$year) {
      $lastDay = date('t',$firstDayOfMonth);
      $lastDayOfMonth = mktime(0,0,0,$month,$lastDay,$year);
 
-     $events = getEventsByMonth($firstDayOfMonth,$lastDayOfMonth,$link);
+     $events = getEventsByMonth($month,$year,$link);
      $calendar = "";
      foreach($events as $event) {
  		$calendar  .= "<p>" . $event['id'] . "</p>";
