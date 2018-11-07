@@ -8,7 +8,7 @@ div.homeContent{
 h3{
   font-weight: bold;
 }
-p{
+.homeContent > p{
   padding: 25px;
   border-style: solid;
   border-color: black;
