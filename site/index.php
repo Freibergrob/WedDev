@@ -13,6 +13,7 @@
 		<link rel="stylesheet" href="<?=$_PATHS['aboutUsPage.css']?>">
 		<link rel="stylesheet" href="<?=$_PATHS['account.css']?>">
 		<link rel="stylesheet" href="<?=$_PATHS['home.css']?>">
+		<link rel="shortcut icon" href="<?=$_PATHS['image']?>favicon.png" type="image/x-icon"/>
 		<link href="<?=$_PATHS['font-varela']?>" rel="stylesheet">
 		<script src="<?=$_PATHS['jquery']?>"></script>
 		<title>Computer Science Club</title>
