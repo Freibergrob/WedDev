@@ -1,5 +1,7 @@
 <?php
+    include "../database/config.php";
     include "../database/user.php";
+
     $user = array();
     $user = getUser($_POST["user"], $link);
 

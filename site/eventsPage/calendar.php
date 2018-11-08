@@ -1,10 +1,12 @@
 <?php
 function build_calendar($month,$year) {
-    require_once "../database/event.php";
+    require_once "../config.php";
+    require_once $_PATHS['db'] . "event.php";
 
-     $firstDayOfMonth = mktime(0,0,0,$month,1,$year);
-     $lastDay = date('t',$firstDayOfMonth);
-     $lastDayOfMonth = mktime(0,0,0,$month,$lastDay,$year);
+
+    $firstDayOfMonth = mktime(0,0,0,$month,1,$year);
+    $lastDay = date('t',$firstDayOfMonth);
+    $lastDayOfMonth = mktime(0,0,0,$month,$lastDay,$year);
 
      $events = getEventsByMonth($month,$year,$link);
      $calendar = "";
@@ -27,8 +29,8 @@ function build_calendar($month,$year) {
      $calendar .= "<td colspan='2'></td>";
      $calendar .= "<td class='title' colspan='3'>" . $monthName . " " . $year . "</td>";
      $calendar .= "<td></td>";
-     $calendar .= "<td><input type='image' src='images/monthchangedown.png' id='monthDown' class='monthleft' onclick='setVals(-1)'>";
-     $calendar .= "<input type='image' src='images/monthchangeup.png' id='monthUp' class='monthright' onclick='setVals(1)'></td>";
+     $calendar .= "<td><input type='image' src='../images/monthchangedown.png' id='monthDown' class='monthleft' onclick='setVals(-1)'>";
+     $calendar .= "<input type='image' src='../images/monthchangeup.png' id='monthUp' class='monthright' onclick='setVals(1)'></td>";
      $calendar .= "<tr>";
 
      foreach($daysOfWeek as $day) {

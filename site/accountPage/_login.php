@@ -21,7 +21,7 @@
         <?php
             if($showSignup){
         ?>
-            <p class="login">Don't have an account?<br /><a href="index.php?nav=signup">Sign up now</a>.</p>
+            <p class="login">Don't have an account?<br /><a href="<?=$_PATHS['link'] . "signupPage/"?>">Sign up now</a>.</p>
         <?php
         }
         ?>
