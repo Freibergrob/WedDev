@@ -1,3 +1,7 @@
+<?php?>
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 	<head>
@@ -44,7 +48,7 @@
                       <li>Treasurer: Robbie Freiberg
                           <ul>
                               <li><p>Hello, I am Robbie and I am the Treasurer of the Computer Science Club.
-                                Some of my hobbies in clube playing video games and playing Magic the Gathering.<p></li>
+                                Some of my hobbies include playing video games and playing Magic the Gathering.<p></li>
                           </ul>
                       </li>
                       <li>Secretary: Sarah
