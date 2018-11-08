@@ -1,0 +1,77 @@
+div.first {
+  text-align: center;
+  vertical-align: middle;
+  font-size: 200%;
+  background-color: rgb(255, 200, 1);
+  height: 50px;
+  padding-top: 10px;
+}
+
+body {
+  background-image: url(https://www.uwosh.edu/computer_science/background.jpg);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-color: #d79a27;
+  padding-top: 38px;
+}
+
+.main {
+    width: 920px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+a.nav-link {
+    background-color: transparent;
+    border: none;
+    font-size: 125%;
+    padding-left: 40px;
+    padding-right: 40px;
+    font-family: 'Varela Round', sans-serif;
+}
+
+a.nav-link:link, a.nav-link:visited {
+    text-decoration: none;
+    color: white;
+}
+
+a.nav-link:hover {
+    text-decoration: none;
+    color: white;
+}
+
+a.nav-link:active {
+    text-decoration: none;
+    color: white;
+}
+
+div.disclaimer{
+    text-align: center;
+}
+
+.banner-container {
+    width: 100%;
+    height: 250px;
+}
+
+.logo-wrapper {
+    position: relative;
+    clear: left;
+}
+
+.logo-float {
+    position: absolute;
+    left: 30px;
+    clear: both;
+}
+
+.main-top {
+    margin-bottom: 10px;
+    padding: 0;
+}
+
+div.nav {
+  text-align: center;
+  background-color: grey;
+  margin-top: 5px;
+}
