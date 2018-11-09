@@ -1,22 +1,15 @@
 <?php
 function build_calendar($month,$year) {
     require_once "../config.php";
-    require_once $_PATHS['db'] . "event.php";
+    require_once $_PATHS['initialize.php'];
 
 
     $firstDayOfMonth = mktime(0,0,0,$month,1,$year);
     $lastDay = date('t',$firstDayOfMonth);
     $lastDayOfMonth = mktime(0,0,0,$month,$lastDay,$year);
 
-     $events = getEventsByMonth($month,$year,$link);
+     $events = getEventsByMonth($month,$year);
      $calendar = "";
-     foreach($events as $event) {
- 		$calendar  .= "<p>" . $event['id'] . "</p>";
-        $calendar  .= "<p>" . $event['title'] . "</p>";
-        $calendar  .= "<p>" . $event['eDate'] . "</p>";
-        $calendar  .= "<p>" . $event['description'] . "</p>";
-        $calendar  .= "<p>" . $event['createdby'] . "</p>";
-     }
 
      $daysOfWeek = array('S','M','T','W','T','F','S');
 

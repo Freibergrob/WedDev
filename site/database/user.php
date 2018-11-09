@@ -1,28 +1,26 @@
 <?php
-    require_once "config.php";
-
-    function insertUser($u, $ph, $link) {
-        $user = $link->quote($u);
-        $pass = $link->quote($ph);
+    function insertUser($u, $ph) {
+        global $db;
+        $user = $db->quote($u);
+        $pass = $db->quote($ph);
 
         $sql = "INSERT INTO users (username, password) VALUES ($user,$pass)";
 
-        $link->exec($sql);
+        $db->exec($sql);
 
         //Error Handle This
     }
 
     function getUser($u, $link) {
-        $result = array();
-        $user = $link->quote($u);
-        $sql = "SELECT id, username, password, role FROM users WHERE username = $user";
-        $query = $link->query($sql);
-            foreach($query as $row) {
-                $result["id"] = $row["id"];
-                $result["user"] = $row["username"];
-                $result["role"] = $row["role"];
-                $result["password"] = $row["password"];
-            }
-        return $result;
+        global $db;
+        $user = $db->quote($u);
+        try {
+            $rows = $db->query("SELECT * FROM users WHERE username = $user");
+            return $rows;
+        } catch (PDOException $e) {
+            print "Error!: " . $e->getMessage() . "<br/>";
+            db_disconnect();
+            die();
+        }
     }
  ?>

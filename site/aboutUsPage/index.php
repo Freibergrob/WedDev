@@ -16,7 +16,7 @@
 	<body>
         <div class="main">
 			<?php include $_PATHS['_header.php']; ?>
-    		<div id="content-window" class="content-window-events">
+    		<div id="content-window" class="content-window-about">
                 <div class = "aboutUs">
                 <h2>About</h2>
                   <p class = "aboutUsPar">The Computer Science club at the University of Wisconsin Oshkosh is a student-run

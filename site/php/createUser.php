@@ -1,4 +1,5 @@
 <?php
+    require_once($_PATHS['initialize.php']);
     $User = $_POST["username"];
     $Password = $_POST["password"];
 

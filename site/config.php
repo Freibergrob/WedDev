@@ -7,6 +7,7 @@
     $_PATHS['php'] = $_PATHS['include_root'] . "php/";
     $_PATHS['css'] = $_PATHS['link'] . "css/";
     $_PATHS['js'] = $_PATHS['link'] . "js/";
+    $_PATHS['db'] = $_PATHS['include_root'] . "database/";
 
     $cssPath = $_PATHS['include_root'] . "css/";
     $jsPath = $_PATHS['include_root'] . "js/";
@@ -31,7 +32,11 @@
         $_PATHS[$file] = $_PATHS['include_root'] . "common/" . $file;
     }
 
-    $_PATHS['db'] = $_PATHS['include_root'] . "database/";
+    $database = scandir($_PATHS['db']);
+    foreach($database as $file) {
+        $_PATHS[$file] = $_PATHS['db'] . $file;
+    }
+
     $_PATHS['image'] = $_PATHS['link'] . "images/";
 
     $_PATHS['font-varela'] = "https://fonts.googleapis.com/css?family=Varela+Round";
