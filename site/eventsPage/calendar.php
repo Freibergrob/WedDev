@@ -9,6 +9,7 @@ function build_calendar($month,$year) {
     $lastDayOfMonth = mktime(0,0,0,$month,$lastDay,$year);
 
      $events = getEventsByMonth($month,$year);
+     $eventsArray = $events->fetchAll();
      $calendar = "";
 
      $daysOfWeek = array('S','M','T','W','T','F','S');
@@ -52,7 +53,15 @@ function build_calendar($month,$year) {
 
           $date = "$year-$month-$currentDayRel";
 
-          $calendar .= "<td class='cal-day'>$currentDay</td>";
+          $calendar .= "<td class='cal-day'>";
+          foreach($eventsArray as $event) {
+              if (date('j',strtotime($event['eDate'])) == $currentDay)
+              {
+                  $calendar .= $event['title'] . "<br />";
+              }
+          }
+          $calendar .= $currentDay;
+          $calendar .= "</td>";
 
           $currentDay++;
           $dayOfWeek++;
