@@ -17,7 +17,12 @@ h3 {
   border-style: solid;
   border-color: black;
   border-width: 2px;
+  font-size: 125%;
+  font-family: 'Varela Round', sans-serif;
+  color: black;
+  align-content: left;
 }
+
 a {
   text-decoration: none;
 }
