@@ -19,9 +19,18 @@
 	<body>
         <div class="main">
 			<?php include $_PATHS['_header.php']; ?>
+			<div>
+				<button id="btn">ClickMe</button>
+			</div>
     		<div id="content-window" class="content-window-events">
 			</div>
 			<?php include $_PATHS['_footer.php']; ?>
+		</div>
+		<div class="modal" id="eventForm">
+			<div class="modal-content">
+    			<span class="close">&times;</span>
+    			<p>Some text in the Modal..</p>
+  			</div>
 		</div>
     </body>
 </html>
