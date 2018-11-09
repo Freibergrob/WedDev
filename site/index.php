@@ -10,6 +10,7 @@
 		<meta name=“robots” content=“noindex, nofollow” />
         <link rel="stylesheet" href="<?=$_PATHS['common.css']?>">
 		<link rel="stylesheet" href="<?=$_PATHS['home.css']?>">
+		<link rel="shortcut icon" href="<?=$_PATHS['image']?>favicon.png" type="image/x-icon"/>
 		<link href="<?=$_PATHS['font-varela']?>" rel="stylesheet">
 		<script src="<?=$_PATHS['jquery']?>"></script>
 		<title>Computer Science Club</title>

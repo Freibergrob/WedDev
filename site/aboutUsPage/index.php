@@ -1,3 +1,7 @@
+<?php?>
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 	<head>
@@ -8,6 +12,7 @@
 		<meta name="keywords" content="IT,Social,Programming">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta name=“robots” content=“noindex, nofollow” />
+		<link rel="shortcut icon" href="<?=$_PATHS['image']?>favicon.png" type="image/x-icon"/>
 		<link rel="stylesheet" href="<?=$_PATHS['common.css']?>">
 		<link rel="stylesheet" href="<?=$_PATHS['aboutUsPage.css']?>">
 		<link href="<?=$_PATHS['font-varela']?>" rel="stylesheet">
@@ -44,7 +49,7 @@
                       <li>Treasurer: Robbie Freiberg
                           <ul>
                               <li><p>Hello, I am Robbie and I am the Treasurer of the Computer Science Club.
-                                Some of my hobbies in clube playing video games and playing Magic the Gathering.<p></li>
+                                Some of my hobbies include playing video games and playing Magic the Gathering.<p></li>
                           </ul>
                       </li>
                       <li>Secretary: Sarah

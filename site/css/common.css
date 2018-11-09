@@ -37,7 +37,7 @@ a.nav-link:link, a.nav-link:visited {
 
 a.nav-link:hover {
     text-decoration: none;
-    color: white;
+    color: rgb(82, 70, 7);
 }
 
 a.nav-link:active {
