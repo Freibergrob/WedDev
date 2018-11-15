@@ -14,4 +14,16 @@
             die();
         }
     }
+    function getNextEvent(){
+      $db = db_connect();
+      try{
+        $rows = $db->query("SELECT * FROM events WHERE eDate > NOW() LIMIT 1");
+        return $rows;
+      }
+      catch(PDOException $e){
+        print "Error!: " . $e->getMessage() . "<br/>";
+        die();
+      }
+
+    }
 ?>
