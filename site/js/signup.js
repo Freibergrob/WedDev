@@ -11,7 +11,7 @@ function getUser(user) {
             userResponse = response;
         },
         error: function(error) {
-            userResponse = "error";
+            console.log(response.responseText);
         }
     });
 }

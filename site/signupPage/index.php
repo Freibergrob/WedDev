@@ -22,8 +22,6 @@
                 <script src="<?=$_PATHS['signup.js']?>"></script>
                 <?php
                 if($_SERVER["REQUEST_METHOD"] == "POST") {
-                    require_once $_PATHS['db'] . "config.php";
-                    require_once $_PATHS['db'] . "user.php";
                     require_once $_PATHS['php'] . "createUser.php";
                 } else {
                 ?>

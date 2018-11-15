@@ -1,6 +1,6 @@
 <?php
     function insertUser($u, $ph) {
-        global $db;
+        $db = db_connect();
         $user = $db->quote($u);
         $pass = $db->quote($ph);
 
@@ -11,8 +11,8 @@
         //Error Handle This
     }
 
-    function getUser($u, $link) {
-        global $db;
+    function getUser($u) {
+        $db = db_connect();
         $user = $db->quote($u);
         try {
             $rows = $db->query("SELECT * FROM users WHERE username = $user");

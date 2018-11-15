@@ -3,7 +3,7 @@
     $User = $_POST["username"];
     $Password = $_POST["password"];
 
-    insertUser($User, crypt($Password), $link);
+    insertUser($User, crypt($Password));
 
 ?>
 

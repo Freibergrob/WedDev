@@ -1,15 +1,20 @@
 <?php
-$user = array();
-$user = getUser($_POST["username"], $link);
+require_once "../config.php";
+require_once $_PATHS['initialize.php'];
 
-if(isset($user["Error"])) {
+$users = getUser($_POST["username"]);
+$usersArray = $users->fetchAll();
+#var_dump($user);
+
+if($users->rowCount()==0){
+  $loginerror = "Authenication Failure!";
+
+} else if($usersArray[0]['password'] != crypt($_POST["password"], $usersArray[0]['password'])) {
     $loginerror = "Authenication Failure!";
-} else if(!isset($user["user"]) || !isset($user["password"]) || !isset($user["role"]) || $user["password"] == crypt($_POST["password"], $user["password"])) {
-    $loginerror = "Authenication Failure!";
-} else  {
+ } else  {
     $_SESSION["loggedin"] = true;
-    $_SESSION["id"] = $user["id"];
-    $_SESSION["username"] = $user["user"];
-    $_SESSION["role"] = $user["role"];
+    $_SESSION["id"] = $usersArray[0]["id"];
+    $_SESSION["username"] = $usersArray[0]["username"];
+    $_SESSION["role"] = $usersArray[0]["role"];
 }
 ?>
