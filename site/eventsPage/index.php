@@ -29,7 +29,7 @@
 		<div class="modal" id="eventForm">
 			<div class="modal-content">
     			<span class="close">&times;</span>
-    			<p>Some text in the Modal..</p>
+    			<p>Include Event Form Here</p>
   			</div>
 		</div>
     </body>
