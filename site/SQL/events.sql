@@ -5,6 +5,7 @@ CREATE TABLE events
     eDate   datetime NOT NULL,
     description varchar(1000),
     createdby int(11),
+    location varchar(15),
     PRIMARY KEY (id),
     FOREIGN KEY (createdby) REFERENCES users(id)
 )
