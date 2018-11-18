@@ -41,4 +41,5 @@
 
     $_PATHS['font-varela'] = "https://fonts.googleapis.com/css?family=Varela+Round";
     $_PATHS['jquery'] = "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js";
+    $_PATHS['tinymce'] = "https://cloud.tinymce.com/stable/tinymce.min.js?apiKey=d6pd00vz5b8iwawywnsddp7hgkfvmw7ozlewa1diihifo621";
 ?>
