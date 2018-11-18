@@ -10,7 +10,8 @@
 		<meta name=“robots” content=“noindex, nofollow” />
 		<link rel="shortcut icon" href="<?=$_PATHS['image']?>favicon.png" type="image/x-icon"/>
 		<link rel="stylesheet" href="<?=$_PATHS['common.css']?>">
-		<link rel="stylesheet" href="<?=$_PATHS['forms.css']?>">
+        
+        <link rel="stylesheet" href="<?=$_PATHS['index.css']?>">
 		<link href="<?=$_PATHS['font-varela']?>" rel="stylesheet">
         <script src="<?=$_PATHS['jquery']?>"></script>
 		<title>Computer Science Club</title>
@@ -31,17 +32,17 @@
                         <p class="login">Please fill this form to create an account.</p>
                         <div class="form-group">
                             <label>Username</label>
-                            <input id="username" type="text" name="username" class="form-control" required>
+                            <input id="username" type="text" name="username" class="form-control" placeholder="User Name" required>
                             <span id="usernameErr"></span>
                         </div>
                         <div class="form-group">
                             <label>Password</label>
-                            <input id="password" type="password" name="password" class="form-control" required>
+                            <input id="password" type="password" name="password" class="form-control" placeholder="Password" required>
                             <span id="passwordErr"></span>
                         </div>
                         <div class="form-group">
                             <label class="confirm_password">Confirm Password</label>
-                            <input id="confirm_password" type="password" name="confirm_password" class="form-control" required>
+                            <input id="confirm_password" type="password" name="confirm_password" class="form-control" placeholder="Confirm Password"required>
                             <span id="confirmErr"></span>
                         </div>
                         <div class="form-group button">
