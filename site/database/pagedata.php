@@ -10,4 +10,17 @@
             die();
         }
     }
+
+    function UpdatePageContent($pageId, $sectionId, $data) {
+        $db = db_connect(); //I could not get this to work in the global scope.
+        $pageIdC = $db->quote($pageId);
+        $sectionIdC = $db->quote($sectionId);
+        $dataC = $db->quote($data);
+        try {
+            $sql = "UPDATE pagedata SET data = $dataC WHERE pageid = $pageIdC and sectionid = $sectionIdC";
+            $db->exec($sql);
+        } catch (PDOException $e) {
+
+        }
+    }
 ?>
