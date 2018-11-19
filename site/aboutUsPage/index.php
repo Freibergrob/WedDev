@@ -31,25 +31,6 @@
 					<?php
 						}
 					?>
-                  <h2>Links</h2>
-                        <div class = "links">
-                          <a href = "https://discord.gg/VxBYHqR" target = "_blank">
-                                <img class = "image" src="<?=$_PATHS['image']?>discordIcon.png" alt="Discord icon" title = "Discord" width ="125">
-                          </a>
-                          <span><p class = "discripton">Discord</p></span>
-                        </div>
-                        <div class = "links">
-                          <a href = "https://github.com/UWO-CS-Club" target = "_blank">
-                                <img class = "image" src="<?=$_PATHS['image']?>gitIcon.png" alt="GitHub icon" title = "GitHub" width ="125">
-                          </a>
-                          <span><p class = "discripton">GitHub</p></span>
-                        </div>
-                        <div class = "links">
-                        <a href = "https://www.uwosh.edu/computer_science/" target = "_blank">
-                                <img class = "image" src="<?=$_PATHS['image']?>oshkoshIcon.jpg" alt="UWO icon" title = "UWO" width ="125">
-                        </a>
-                        <span><p class = "discripton">Computer Science</p></span>
-                        </div>
                 </div>
 			</div>
 			<?php include $_PATHS['_footer.php']; ?>
