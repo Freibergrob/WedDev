@@ -6,7 +6,7 @@ form {
   p.login {
     text-align: center;
     font-family: 'Varela Round', sans-serif;
-    font-size: 100%;
+    font-size: 125%;
      margin: 5px 1;
   }
   
@@ -16,12 +16,12 @@ form {
   
   .wrapper {
       width: 450px;
-      height: 460px;
+      height: 400px;
       padding: 5px;
       background-color: rgb(236, 177, 14);
       margin: auto;
       font-family: 'Varela Round', sans-serif;
-      font-size: 125%;
+      font-size: 100%;
       border-radius: 4px;
   }
   
@@ -44,6 +44,8 @@ form {
       width: 150px;
       text-align: left;
       margin-right: 8px;
+      font-family: 'Varela Round', sans-serif;
+      font-size: 100%;
   }
   
   input[type=text], select, input[type=password] {
@@ -58,4 +60,5 @@ form {
   
   h2 {
     text-align: center;
+    font-family: 'Varela Round', sans-serif;
   }

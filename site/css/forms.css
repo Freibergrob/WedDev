@@ -7,7 +7,7 @@ p.login {
   text-align: center;
   font-family: 'Varela Round', sans-serif;
   font-size: 125%;
-  
+  margin: 5px 1;
 }
 
 p.error {
@@ -22,7 +22,7 @@ p.error {
 
 .wrapper {
     width: 450px;
-    height: 370px;
+    height: 355px;
     padding: 5px;
     background-color: rgb(236, 177, 14);
     margin: auto;
@@ -36,12 +36,13 @@ input[type=submit] {
    background-color: black;
    color: white;
    padding: 5px;
-   margin: 5px 1;
+   margin: 10px ;
    border: none;
    border-radius: 4px;
    cursor: pointer;
    font-family: 'Varela Round', sans-serif;
-   font-size: 150%;
+   font-size: 125%;
+   margin-bottom: 2px;
 }
 
 label {
@@ -50,7 +51,7 @@ label {
     text-align: left;
     margin-right: 8px;
     font-family: 'Varela Round', sans-serif;
-    font-size: 150%;
+    font-size: 100%;
 }
 
 input[type=text], select, input[type=password] {
