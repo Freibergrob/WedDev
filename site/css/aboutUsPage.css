@@ -20,16 +20,12 @@ h2{
   color: black;
   align-content: left;
 }
-li{
-  font-size: 100%;
-  font-family: 'Varela Round', sans-serif;
-  color: black;
-}
 p.aboutUsPar, .listBorder, .linkSection{
   border-style: solid;
   border-color: black;
   border-width: 2px;
   padding: 10px;
+  text-align: center;
 }
 .links{
   display: inline-block;
@@ -44,4 +40,9 @@ p.aboutUsPar, .listBorder, .linkSection{
   border-radius: 50%;
   padding-left: 40px;
   padding-right: 40px;
+}
+.titleAndName{
+  text-decoration: underline;
+  text-align: center;
+  font-weight: bold;
 }

@@ -27,15 +27,16 @@
 							date_default_timezone_set('America/Chicago');
 							$time = strtotime($event['eDate']);
 							$formatForView = date("m/d/y g:i A", $time);?>
-							<?=$event['title']?><br>
+							<span class="title"><?=$event['title']?></span><br>
 							Time: <?=$formatForView?><br>
-							Location: <?=$event['location']?>
+							Location: <?=$event['location']?><br>
+							<?=$event['description']?>
 							<?php
-						} ?>
+						} ?></p>
 				    <h3>Where we meet</h3>
-				    <p> Our meeting room is Halsey 202. (Location can vary) </p>
+				    <p> Our meeting room is Halsey 202. (Location may vary) </p>
 				    <h3>Times</h3>
-				    <p>We meet every Thursday, excluding holidays, at 5:00 p.m. (Times may vary)</p>
+				    <p>We meet every Thursday, excluding holidays, at 5:00 p.m. (Time may vary)</p>
 						<h3>Sales pitch </h3>
 				    <p>Joining UW Oshkosh's Computer Science Club will give you so much, for just simply signing up.
 				     You will meet people that are in your field, get hands on experience with different technology, solve a variety of programming problems
