@@ -25,16 +25,23 @@ li{
   font-family: 'Varela Round', sans-serif;
   color: black;
 }
-p.aboutUsPar, .listBorder{
+p.aboutUsPar, .listBorder, .linkSection{
   border-style: solid;
   border-color: black;
   border-width: 2px;
+  padding: 10px;
 }
 .links{
   display: inline-block;
   padding-right: 50px;
   text-align: center;
 }
+.linkSection {
+    text-align: center;
+}
+
 .image{
   border-radius: 50%;
+  padding-left: 40px;
+  padding-right: 40px;
 }
