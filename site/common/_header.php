@@ -17,5 +17,6 @@
         <a class="nav-link" href="<?=$_PATHS['link']?>aboutUsPage/">About Us</a>
         <a class="nav-link" href="<?=$_PATHS['link']?>eventsPage/">Events</a>
         <a class="nav-link" href="<?=$_PATHS['link']?>accountPage">Account</a>
+        <a class="nav-link" href="<?=$_PATHS['link']?>accountPage/_logout.php">Log out</a>
     </div>
 </div>

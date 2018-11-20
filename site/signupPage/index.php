@@ -32,17 +32,17 @@
                         <p class="login">Please fill this form to create an account.</p>
                         <div class="form-group">
                             <label>Username</label>
-                            <input id="username" type="text" name="username" class="form-control" placeholder="User Name" required>
+                            <input id="username" type="text" name="username" class="form-control" required>
                             <span id="usernameErr"></span>
                         </div>
                         <div class="form-group">
                             <label>Password</label>
-                            <input id="password" type="password" name="password" class="form-control" placeholder="Password" required>
+                            <input id="password" type="password" name="password" class="form-control" required>
                             <span id="passwordErr"></span>
                         </div>
                         <div class="form-group">
                             <label class="confirm_password">Confirm Password</label>
-                            <input id="confirm_password" type="password" name="confirm_password" class="form-control" placeholder="Confirm Password"required>
+                            <input id="confirm_password" type="password" name="confirm_password" class="form-control"required>
                             <span id="confirmErr"></span>
                         </div>
                         <div class="form-group button">
