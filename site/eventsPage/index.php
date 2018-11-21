@@ -1,18 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-        <?php include "../config.php" ?>
 		<meta charset="UTF-8">
-		<meta name="author" content="The Group">
-		<meta name="description" content="CS Club">
-		<meta name="keywords" content="IT,Social,Programming">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta name=“robots” content=“noindex, nofollow” />
-		<link rel="shortcut icon" href="<?=$_PATHS['image']?>favicon.png" type="image/x-icon"/>
-		<link rel="stylesheet" href="<?=$_PATHS['common.css']?>">
+		<?php require_once "../config.php";
+		      require_once $_PATHS['_meta.php']; ?>
 		<link rel="stylesheet" href="<?=$_PATHS['events.css']?>">
-		<link href="<?=$_PATHS['font-varela']?>" rel="stylesheet">
-		<script src="<?=$_PATHS['jquery']?>"></script>
         <script src="<?=$_PATHS['events.js']?>"></script>
 		<title>Computer Science Club</title>
 	</head>
@@ -29,7 +21,16 @@
 		<div class="modal" id="eventForm">
 			<div class="modal-content">
     			<span class="close">&times;</span>
-    			<p>Include Event Form Here</p>
+    			<form>
+					<div>Title</div>
+					<div><input type="text" name="title" id="title"/></div>
+					<div>Date</div>
+					<div><input type="text" name="date" id="date"/></div>
+					<div>Location</div>
+					<div><input type="text" name="location" id="location"/></div>
+					<div>Description</div>
+					<div><textarea name="description" id="description"></textarea></div>
+				</form>
   			</div>
 		</div>
     </body>
