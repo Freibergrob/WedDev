@@ -1,0 +1,31 @@
+.content-window-home {
+  margin: auto;
+  padding: 10px;
+  text-align: center;
+}
+.title{
+  font-weight: bold;
+}
+
+h3 {
+  font-weight: bold;
+  background-color: black;
+  font-size: 125%;
+  text-align: center;
+  color: white;
+  font-family: 'Varela Round', sans-serif;
+}
+ p {
+  padding: 25px;
+  border-style: solid;
+  border-color: black;
+  border-width: 2px;
+  font-size: 125%;
+  font-family: 'Varela Round', sans-serif;
+  color: black;
+  align-content: left;
+}
+
+a {
+  text-decoration: none;
+}

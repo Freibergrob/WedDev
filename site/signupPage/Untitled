@@ -1,0 +1,132 @@
+
+=================================================================
+Decision tree
+=================================================================
+J48 pruned tree
+------------------
+
+Schiller <= 0: 0 (784.0/7.0)
+Schiller > 0
+|   First sexual intercourse <= 14: 0 (7.0/2.0)
+|   First sexual intercourse > 14
+|   |   Num of pregnancies <= 5: 1 (61.51/16.84)
+|   |   Num of pregnancies > 5: 0 (5.49/1.33)
+
+Number of Leaves  : 	4
+
+Size of the tree : 	7
+
+
+Time taken to build model: 0.12 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         816               95.1049 %
+Incorrectly Classified Instances        42                4.8951 %
+Kappa statistic                          0.6118
+Mean absolute error                      0.0593
+Root mean squared error                  0.1934
+Relative absolute error                 49.0121 %
+Root relative squared error             78.9499 %
+Total Number of Instances              858
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.970    0.327    0.977      0.970    0.974      0.613    0.846     0.975     0
+                 0.673    0.030    0.607      0.673    0.638      0.613    0.846     0.495     1
+Weighted Avg.    0.951    0.308    0.954      0.951    0.952      0.613    0.846     0.944
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 779  24 |   a = 0
+  18  37 |   b = 1
+  =================================================================
+  Naive Bayes
+  =================================================================
+  === Summary ===
+
+Correctly Classified Instances         761               88.6946 %
+Incorrectly Classified Instances        97               11.3054 %
+Kappa statistic                          0.4053
+Mean absolute error                      0.1123
+Root mean squared error                  0.3102
+Relative absolute error                 92.8106 %
+Root relative squared error            126.6546 %
+Total Number of Instances              858
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.897    0.255    0.981      0.897    0.937      0.447    0.875     0.979     0
+                 0.745    0.103    0.331      0.745    0.458      0.447    0.875     0.414     1
+Weighted Avg.    0.887    0.245    0.939      0.887    0.906      0.447    0.875     0.943
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 720  83 |   a = 0
+  14  41 |   b = 1
+  =================================================================
+  MultiLayer  Perceptron
+  =================================================================
+  === Summary ===
+
+Correctly Classified Instances         813               94.7552 %
+Incorrectly Classified Instances        45                5.2448 %
+Kappa statistic                          0.5436
+Mean absolute error                      0.0501
+Root mean squared error                  0.2001
+Relative absolute error                 41.4198 %
+Root relative squared error             81.7036 %
+Total Number of Instances              858
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.975    0.455    0.969      0.975    0.972      0.544    0.904     0.984     0
+                 0.545    0.025    0.600      0.545    0.571      0.544    0.904     0.609     1
+Weighted Avg.    0.948    0.427    0.945      0.948    0.946      0.544    0.904     0.960
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 783  20 |   a = 0
+  25  30 |   b = 1
+  =================================================================
+  Cost Sensitive Classifer
+  =================================================================
+  === Summary ===
+
+Correctly Classified Instances         803               93.5897 %
+Incorrectly Classified Instances        55                6.4103 %
+Kappa statistic                          0
+Mean absolute error                      0.121
+Root mean squared error                  0.245
+Relative absolute error                100      %
+Root relative squared error            100      %
+Total Number of Instances              858
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 1.000    1.000    0.936      1.000    0.967      ?        0.476     0.933     0
+                 0.000    0.000    ?          0.000    ?          ?        0.476     0.061     1
+Weighted Avg.    0.936    0.936    ?          0.936    ?          ?        0.476     0.877
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 803   0 |   a = 0
+  55   0 |   b = 1
+  =================================================================
+  NAIVE BAYES LEARNING
+  --
+  For this we are trying to figure out if someone has cancer or not. Naive BAYES
+  Learning has the lowest number of cases where it thought it was not cancer but it really was.
+  It is better to think someone has cancer but it turns out they do not compared to
+  telling them they do not have cancer when they really do. I would pick the algorithm
+  that has the lowest number in this section, 0 being the best. As a side note,
+  it turns out the one I choose was the worst out of all of them.
