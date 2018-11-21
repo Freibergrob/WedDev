@@ -27,26 +27,21 @@
 							date_default_timezone_set('America/Chicago');
 							$time = strtotime($event['eDate']);
 							$formatForView = date("m/d/y g:i A", $time);?>
-							<span class="title"><?=$event['title']?></span><br>
+							<?=$event['title']?><br>
 							Time: <?=$formatForView?><br>
-							Location: <?=$event['location']?><br>
-							<?=$event['description']?>
+							Location: <?=$event['location']?>
 							<?php
-						} ?></p>
-				    <h3>Where we meet</h3>
-				    <p> Our meeting room is Halsey 202. (Location may vary) </p>
-				    <h3>Times</h3>
-				    <p>We meet every Thursday, excluding holidays, at 5:00 p.m. (Time may vary)</p>
-						<h3>Sales pitch </h3>
-				    <p>Joining UW Oshkosh's Computer Science Club will give you so much, for just simply signing up.
-				     You will meet people that are in your field, get hands on experience with different technology, solve a variety of programming problems
-				     and you will have fun or your money back guaranteed!</p>
-				    <h3>Learn more about us</h3>
-				    <p>Dying to know more about us? You can find more about us <a href="<?=$_PATHS['link']?>aboutUsPage">here</a>!</p>
-				     <h3>Link to signup</h3>
-				     <p>Thinking about joining? Why not? Click <a href="<?=$_PATHS['link']?>signupPage">here</a> to sign up today! </p>
-
-
+						}
+						$pageContent = getPageContent("homePage");
+								foreach ($pageContent as $section) {
+							?>
+									<?=$section['data'] ?>
+							<?php
+								}
+							?>
+		                </div>
+					<?php include $_PATHS['_footer.php']; ?>
+				</div>
 			</div>
 			<?php include $_PATHS['_footer.php']; ?>
 		</div>
