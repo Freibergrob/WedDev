@@ -5,3 +5,7 @@
 .saveBtn {
     display: inline;
 }
+
+.hideItem {
+    display: none;
+}

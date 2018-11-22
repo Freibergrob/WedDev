@@ -22,5 +22,26 @@
         } catch (PDOException $e) {
 
         }
+        $db = null;
+    }
+
+    function getPages() {
+        $db = db_connect();
+        try{
+            $rows = $db->query("SELECT DISTINCT pageid, pagedisplayname FROM pagedata ORDER BY pageid");
+            return $rows;
+        } catch (PDOException $e) {
+
+        }
+    }
+
+    function getAllSections() {
+        $db = db_connect();
+        try{
+            $rows = $db->query("SELECT * FROM pagedata ORDER BY pageid");
+            return $rows;
+        } catch (PDOException $e) {
+
+        }
     }
 ?>

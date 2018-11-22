@@ -24,6 +24,20 @@
         print "Error!: " . $e->getMessage() . "<br/>";
         die();
       }
+    }
+    function insertEvent($title, $date, $location, $description, $createdby) {
+        $db = db_connect();
+        $titleC = $db->quote($title);
+        $dateC = $db->quote($date);
+        $locationC = $db->quote($location);
+        $descriptionC = $db->quote($description);
+        $createdbyC = $db->quote($createdby);
 
+        try{
+            $sql = "INSERT INTO events (title, edate, location, description, createdby) VALUES ($titleC, $dateC, $locationC, $descriptionC, $createdbyC)";
+            $db->exec($sql);
+        } catch (PDOException $e) {
+
+        }
     }
 ?>

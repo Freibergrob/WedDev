@@ -1,7 +1,7 @@
 <div class="main-top">
     <div class="logo-wrapper">
         <div class="logo-float">
-            <a href="index.php">
+            <a href="<?=$_PATHS['link']?>">
                 <img src="<?=$_PATHS['image']?>CSIcon.png" alt="CSIcon" width="125">
             </a>
         </div>
