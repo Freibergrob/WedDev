@@ -17,7 +17,7 @@
         $pages = getPages();
         foreach($pages as $page) {
         ?>
-        <button onclick="displaySections('<?=$page['pageid']?>')" id="<?=$page['pageid']?>" name="<?=$page['pageid']?>"><?=$page['pagedisplayname']?></button>
+        <button class="pagebtn" id="<?=$page['pageid']?>" name="<?=$page['pageid']?>"><?=$page['pagedisplayname']?></button>
         <?php
         }
         ?>
@@ -27,7 +27,7 @@
         $sections = $sectionsDB->fetchAll();//Using this pattern allows me to loop the result set twice.
         foreach($sections as $section) {
         ?>
-        <button onclick="displayEditor('<?=$section['sectionid']?>')" class="hideItem" data-page="<?=$section['pageid']?>" id="<?=$section['sectionid']?>" name="<?=$section['sectionid']?>"><?=$section['sectiondisplayname']?></button>
+        <button class="hideItem" data-page="<?=$section['pageid']?>" id="<?=$section['sectionid']?>" name="<?=$section['sectionid']?>"><?=$section['sectiondisplayname']?></button>
         <?php
         }
         ?>
@@ -45,8 +45,5 @@
         <?php
         }
         ?>
-
-
-
     </body>
 </html>

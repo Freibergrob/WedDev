@@ -6,6 +6,15 @@ var cssUrlHP = baseUrl + "css/home.css";
 var currentPage = "";
 var currentSection = "";
 
+window.addEventListener('load',function() {
+    $(".pagebtn").each(function() {
+        $(this).bind("click", displaySections);
+    });
+    $("[data-page]").each(function() {
+        $(this).bind("click", displayEditor);
+    });
+});
+
 tinymce.init({
     selector: ".aboutUsPage",
     plugins: "lists advlist table autolink save anchor preview image advcode link textcolor colorpicker",
@@ -30,34 +39,34 @@ tinymce.init({
     content_css : cssUrlHP
 });
 
-function displaySections(pageid) {
+function displaySections() {
     if (currentPage != "") {
         $("[data-page='" + currentPage + "']").each(function() {
             $(this).addClass('hideItem');
         });
     }
-    $("[data-page='" + pageid + "']").each(function() {
+    $("[data-page='" + $(this).attr('id') + "']").each(function() {
         $(this).removeClass('hideItem');
     });
-    if (currentPage != pageid) {
+    if (currentPage != $(this).attr('id')) {
         $("[data-section]").each(function() {
             $(this).addClass('hideItem');
         });
         currentSection = "";
     }
 
-    currentPage = pageid;
+    currentPage = $(this).attr('id');
 }
 
-function displayEditor(sectionid) {
+function displayEditor() {
     if (currentSection != "") {
         $("[data-section='" + currentSection + "']").each(function() {
             $(this).addClass('hideItem');
         });
     }
-    $("[data-section='" + sectionid + "']").each(function() {
+    $("[data-section='" + $(this).attr('id') + "']").each(function() {
         $(this).removeClass('hideItem');
     });
 
-    currentSection = sectionid;
+    currentSection = $(this).attr('id');
 }
