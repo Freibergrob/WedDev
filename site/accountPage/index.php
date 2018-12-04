@@ -12,7 +12,6 @@
 			<?php include $_PATHS['_header.php']; ?>
     		<div id="content-window" class="content-window-account">
                 <?php
-                    session_start();
                     $loginerror = "";
 
                     if($_SERVER["REQUEST_METHOD"] == "POST") {
