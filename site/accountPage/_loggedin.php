@@ -1,4 +1,5 @@
-<p>You are logged in!</p>
+
+<p class = "loggedin"><?= 'You are logged in!';?></p>
 <!--
     Account Management Form
     How does this submit?

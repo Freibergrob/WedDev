@@ -78,3 +78,10 @@ h2 {
   margin: 5px 1;
   color: red;
 }
+.loggedin {
+  text-align: center;
+  font-family: 'Varela Round', sans-serif;
+  font-size: 125%;
+  margin: 5px 1;
+  color:black;
+}
