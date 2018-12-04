@@ -17,12 +17,13 @@ h3 {
 }
  p {
   padding: 25px;
+  background-color: grey;
   border-style: solid;
   border-color: black;
   border-width: 2px;
   font-size: 125%;
   font-family: 'Varela Round', sans-serif;
-  color: black;
+  color: white;
   align-content: left;
 }
 

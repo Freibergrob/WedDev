@@ -16,14 +16,21 @@
 					<h3>Next upcoming event</h3>
 						<p>
 						<?php
-							$event = $events->fetchAll()[0];
+							
+							$event = $events->fetchAll();
+							if (count($event) <= 0){?>
+								<span>No upcoming events.</span>
+							<?php }
+							else {
+								$evt = $event[0]; 
 							date_default_timezone_set('America/Chicago');
-							$time = strtotime($event['eDate']);
+							$time = strtotime($evt['eDate']);
 							$formatForView = date("m/d/y g:i A", $time);
 						?>
-							<?=$event['title']?><br>
+							<?=$evt['title']?><br>
 							<?=$formatForView?><br>
-							<?=$event['location']?>
+							<?=$evt['location']?>
+							<?php }?>
 						</p>
 						<?php
 							$pageContent = getPageContent("homePage");
