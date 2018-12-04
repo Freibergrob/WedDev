@@ -9,6 +9,10 @@
 </head>
     <body>
         <?php
+        session_start();
+        if(!isset($_SESSION["loggedin"]) || !isset($_SESSION["role"]) || $_SESSION["loggedin"] != true || $_SESSION["role"] != 3) {
+            header("Location: " . "index.php");
+        } 
         require_once $_PATHS['initialize.php'];
         if($_SERVER["REQUEST_METHOD"] == "POST") {
             UpdatePageContent($_POST['page'],$_POST['section'], $_POST['sectionData']);
