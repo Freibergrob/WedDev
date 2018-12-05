@@ -16,7 +16,7 @@ body {
 }
 
 .main {
-    width: 920px;
+    width: 48.6%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -50,9 +50,12 @@ div.disclaimer{
     margin-top: 15px;
 }
 
-.banner-container {
+.banner-container .banner {
     width: 100%;
-    height: 250px;
+}
+
+.flag {
+    width: 25%
 }
 
 .logo-wrapper {
