@@ -1,10 +1,12 @@
+
+
 div.first {
   text-align: center;
   vertical-align: middle;
-  font-size: 200%;
+  font-size: 3vw;
   background-color: rgb(255, 200, 1);
-  height: 50px;
   padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 body {
