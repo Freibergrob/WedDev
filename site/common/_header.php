@@ -1,3 +1,7 @@
+<?php   
+session_start();
+?>
+
 <div class="main-top">
     <div class="logo-wrapper">
         <div class="logo-float">
@@ -17,6 +21,12 @@
         <a class="nav-link" href="<?=$_PATHS['link']?>aboutUsPage/">About Us</a>
         <a class="nav-link" href="<?=$_PATHS['link']?>eventsPage/">Events</a>
         <a class="nav-link" href="<?=$_PATHS['link']?>accountPage">Account</a>
-        <a class="nav-link" href="<?=$_PATHS['link']?>accountPage/_logout.php">Log out</a>
+        <?php
+        if(isset($_SESSION['loggedin']) && $_SESSION['loggedin'] === true){
+            ?>
+            <a class="nav-link" href="<?=$_PATHS['link']?>accountPage/_logout.php">Log out</a>
+            <?php
+            }
+            ?>
     </div>
 </div>
