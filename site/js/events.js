@@ -24,14 +24,25 @@ $(document).ready(function() {
 
     var submitBtn = document.getElementById("eventSubmit");
     submitBtn.onclick = function() {
+        var title = document.getElementById("title").value;
+        var eDate = document.getElementById("date").value;
+        var location = document.getElementById("location").value;
+        var description = document.getElementById("description").value;
+        var createdby = document.getElementById("createdby").value;
+
         $.ajax({
             url: iurl,
             type: "POST",
-            data: { title: m, date: y, location: location, description: description, createdby: createdby},
+            data: { title: title, eDate: eDate, location: location, description: description, createdby: createdby},
             async: true,
             dataType: "json",
             success: function(response) {
-                document.getElementById("content-window").innerHTML = response;
+                document.getElementById("response").innerHTML = "Event Created!";
+                document.getElementById("title").value = "";
+                document.getElementById("date").value = "";
+                document.getElementById("location").value = "";
+                document.getElementById("description").value = "";
+                document.getElementById("createdby").value = "";
             },
             error: function(error) {
                 alert(error);

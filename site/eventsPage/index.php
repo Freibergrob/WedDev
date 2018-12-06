@@ -12,7 +12,7 @@
         <div class="main">
 			<?php include $_PATHS['_header.php']; ?>
 				<?php
-					if(isset($_SESSION['loggedin']) && $_SESSION['loggedin'] === true) {
+					if(isset($_SESSION['loggedin']) && $_SESSION['loggedin'] === true && isset($_SESSION['role']) && $_SESSION['role'] >= 2) {
 				?>
 				<div>
 					<button id="btn">Create Event</button>
@@ -29,6 +29,7 @@
 							<div>Description</div>
 							<div><textarea name="description" id="description"></textarea></div>
 							<div><button id="eventSubmit">Submit</button></div>
+							<div id="response"></div>
 							<input type="hidden" id="createdby" name="createdby" value="<?=$_SESSION['id']?>">
 		  			</div>
 				</div>

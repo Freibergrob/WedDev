@@ -40,14 +40,14 @@
     <option value="2026">2026</option>
     </select>
     <label for="fall">Fall</label>
-    <input type="radio" id="fall" name="fall" value="fall">
+    <input type="radio" id="fall" name="season" value="fall">
     <label for="spring">Spring</label>
-    <input type="radio" id="spring" name="spring" value="spring"> 
+    <input type="radio" id="spring" name="season" value="spring">
     <label for="email">Email</label>
     <input type="input" id="email" name="email" placeholder="Email">
     <label for="bio">Bio</label>
     <textarea rows="4" cols="63">
-    Tell us about yourself...        
+    Tell us about yourself...
     </textarea>
 </form>
 </p>
