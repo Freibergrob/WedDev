@@ -21,12 +21,13 @@ session_start();
         <a class="nav-link" href="<?=$_PATHS['link']?>aboutUsPage/">About Us</a>
         <a class="nav-link" href="<?=$_PATHS['link']?>eventsPage/">Events</a>
         <a class="nav-link" href="<?=$_PATHS['link']?>accountPage">Account</a>
-        <?php
-        if(isset($_SESSION['loggedin']) && $_SESSION['loggedin'] === true){
-            ?>
-            <a class="nav-link" href="<?=$_PATHS['link']?>accountPage/_logout.php">Log out</a>
-            <?php
-            }
-            ?>
+    <?php
+        if(isset($_SESSION['loggedin']) && $_SESSION['loggedin'] === true)
+        {
+    ?>
+        <a class="nav-link" href="<?=$_PATHS['link']?>accountPage/_logout.php">Log out</a>
+    <?php
+        }
+    ?>
     </div>
 </div>
