@@ -1,4 +1,4 @@
-<?php   
+<?php
 session_start();
 ?>
 
@@ -6,12 +6,12 @@ session_start();
     <div class="logo-wrapper">
         <div class="logo-float">
             <a href="<?=$_PATHS['link']?>">
-                <img src="<?=$_PATHS['image']?>CSIcon.png" alt="CSIcon" width="125">
+                <img class="flag" src="<?=$_PATHS['image']?>CSIcon.png" alt="CSIcon">
             </a>
         </div>
     </div>
     <div class="banner-container">
-        <img src="<?=$_PATHS['image']?>bannerc.jpg" alt="Banner">
+        <img class="banner" src="<?=$_PATHS['image']?>bannerc.jpg" alt="Banner">
     </div>
     <div class="first">
         UW-Oshkosh Computer Science Club

@@ -1,7 +1,3 @@
-<!--
-    Form needs to be styled
--->
-
 <form action=<?=$formPostUrl ?> method="post">
     <div class="wrapper">
         <h2>Login</h2>
@@ -15,7 +11,7 @@
             <input type="password" name="password" class="form-control" required>
         </div>
         <div class="button">
-           
+
             <input type="submit" class="btn btn-primary" value="Login">
         </div>
         <?php

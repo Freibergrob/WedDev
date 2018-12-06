@@ -20,7 +20,7 @@
 					<?php
 						foreach ($pageContent as $section) {
 					?>
-							<?=$section['data'] ?>
+							<?=$section['data'] ?><br>
 					<?php
 						}
 					?>
