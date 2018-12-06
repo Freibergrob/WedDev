@@ -1,7 +1,8 @@
 var currDate = new Date();
 var m = currDate.getMonth() + 1;
 var y = currDate.getFullYear();
-var url = window.location.href.split("site")[0] + "site/api/eventsApi.php";
+var calurl = window.location.href.split("site")[0] + "site/api/eventsApi.php";
+var iurl = window.location.href.split("site")[0] + "site/api/insertEventApi.php";
 
 $(document).ready(function() {
     getCal(m,y);
@@ -19,6 +20,23 @@ $(document).ready(function() {
         if (event.target == modal) {
             modal.style.display = "none";
         }
+    }
+
+    var submitBtn = document.getElementById("eventSubmit");
+    submitBtn.onclick = function() {
+        $.ajax({
+            url: iurl,
+            type: "POST",
+            data: { title: m, date: y, location: location, description: description, createdby: createdby},
+            async: true,
+            dataType: "json",
+            success: function(response) {
+                document.getElementById("content-window").innerHTML = response;
+            },
+            error: function(error) {
+                alert(error);
+            }
+        });
     }
 });
 
@@ -44,7 +62,7 @@ function setVals(chg) {
 
 function getCal(m,y) {
 	$.ajax({
-        url: url,
+        url: calurl,
         type: "POST",
         data: { m: m, y: y},
         async: true,

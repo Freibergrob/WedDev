@@ -8,12 +8,13 @@
     <link rel="stylesheet" href="<?=$_PATHS['adminPanel.css']?>">
 </head>
     <body>
+        <div class="outer">
         <div class="wrapper">
             <?php
             session_start();
             if(!isset($_SESSION["loggedin"]) || !isset($_SESSION["role"]) || $_SESSION["loggedin"] != true || $_SESSION["role"] != 3) {
                 header("Location: " . "index.php");
-            } 
+            }
             require_once $_PATHS['initialize.php'];
             if($_SERVER["REQUEST_METHOD"] == "POST") {
                 UpdatePageContent($_POST['page'],$_POST['section'], $_POST['sectionData']);
@@ -41,7 +42,7 @@
             foreach($sections as $section) {
             ?>
             <div class='hideItem' data-section='<?=$section['sectionid']?>'>
-                <form action="adminPanel.php" method="post" class="sectionForm">
+                <form action="admin.php" method="post" class="sectionForm">
                     <textarea name="sectionData" class="save <?=$section['pageid']?>"><?= $section['data']?></textarea>
                     <input type="hidden" name="page" value="<?=$section['pageid']?>">
                     <input type="hidden" name="section" value="<?=$section['sectionid']?>">
@@ -51,6 +52,7 @@
             }
             ?>
         </div>
+    </div>
         <?php include $_PATHS['_footer.php']; ?>
     </body>
 </html>
