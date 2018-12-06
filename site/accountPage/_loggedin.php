@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="loggedin.css">
+<link rel="stylesheet" href="<?=$_PATHS['loggedin.css']?>">
 <p class = "loggedin"><?= 'You are logged in!';?></p>
 <!--
     Account Management Form
@@ -46,8 +46,8 @@
     <label for="email">Email</label>
     <input type="input" id="email" name="email" placeholder="Email">
     <label for="bio">Bio</label>
-    <textarea rows="4" cols="50">
-        Tell us about yourself...        
+    <textarea rows="4" cols="63">
+    Tell us about yourself...        
     </textarea>
 </form>
 </p>
