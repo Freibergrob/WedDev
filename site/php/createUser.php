@@ -4,6 +4,8 @@
     $Password = $_POST["password"];
 
     insertUser($User, crypt($Password));
+    $result = getUser($User)->fetchAll();
+    insertProfile($result[0]["id"]);
 
 ?>
 

@@ -6,19 +6,6 @@
     Perhaps submit the form to an update account handler,
     that redirects back to the account page after update?
 -->
-<script>
-    function valueChanged() {
-    if (document.getElementById("fall").checked == true) {
-        document.getElementById("fall").value = 1;
-        document.getElementById("spring").value = 0;
-    } else {
-        document.getElementById("fall").value = 0;
-        document.getElementById("spring").value = 1;
-    }
-    console.log(document.getElementById("fall").value);
-    console.log(document.getElementById("spring").value)
-}
-</script>
 <p>
 <form>
     <label for="first">First Name</label>
