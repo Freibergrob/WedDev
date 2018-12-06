@@ -21,8 +21,8 @@
     font-size: 100%;
 }
 .sectionForm {
-    width: 60%;
-    margin: 25px auto;
+    width: 55%;
+    margin: 30px auto;
   }
 .pagebtn {
     width: 200px;
@@ -51,3 +51,9 @@
     font-size: 110%;
     margin-bottom: 2px;
  }
+ .logout-link {
+    float:right;
+    color: black;
+    font-size: 125%;
+    font-family: 'Varela Round', sans-serif;
+}

@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="<?=$_PATHS['adminPanel.css']?>">
 </head>
     <body>
+    <a class="logout-link" href="<?=$_PATHS['link']?>accountPage/_logout.php">Log out</a>
         <div class="outer">
         <div class="wrapper">
             <?php
