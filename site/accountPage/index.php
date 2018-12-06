@@ -21,7 +21,7 @@
                     }
 
                     if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true) {
-                        include $_PATHS['include_root'] . "accountPage/_loggedin.php";
+                        header("Location:" . "_loggedin.php");
                     } else {
                         $formPostUrl = $_PATHS['link'] . "accountPage/";
                         $showSignup = true;
