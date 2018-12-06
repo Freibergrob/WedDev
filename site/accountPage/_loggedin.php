@@ -1,13 +1,27 @@
-<link rel="stylesheet" href="<?=$_PATHS['loggedin.css']?>">
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<?php require_once "../config.php";
+			  require_once $_PATHS['_meta.php']; ?>
+        <link rel="stylesheet" href="<?=$_PATHS['common.css']?>">   
+		<link rel="stylesheet" href="<?=$_PATHS['loggedin.css']?>">
+		<title>Computer Science Club</title>
+	</head>
+	<body>
+<?php 
+    if ($_SERVER['REQUEST_METHOD'] === 'POST'){
+        updateProfile($_SESSION['id'], $_POST['first'], 
+                      $_POST['last'], $_POST['nick'], 
+                      $_POST['year'], $_POST['season'],
+                      $_POST['email'], $_POST['aboutself']);
+    }
+?>
+<div class="main">
+<?php include $_PATHS['_header.php'];?>
 <p class = "loggedin"><?= 'You are logged in!';?></p>
-<!--
-    Account Management Form
-    How does this submit?
-    Perhaps submit the form to an update account handler,
-    that redirects back to the account page after update?
--->
 <p>
-<form>
+<form action="_loggedin.php" method="POST">
     <label for="first">First Name</label>
     <input type="input" id="first" name="first" class="first" placeholder="First Name">
     <label for="last">Last Name</label>
@@ -33,6 +47,11 @@
     <label for="email">Email</label>
     <input type="input" id="email" name="email" placeholder="Email">
     <label for="bio">Biography</label>
-    <textarea rows="4" cols="63" name="aboutself" placeholder="Tell us about yourself..."></textarea>
+    <textarea rows="4" cols="63" name="aboutself" placeholder="Tell us about yourself..."></textarea><br>
+    <input type="submit" value="submit">
 </form>
 </p>
+<?php include $_PATHS['_footer.php']; ?>
+</div>
+</body>
+</html>
