@@ -21,13 +21,13 @@
 					<div class="modal-content">
 		    			<span class="close">&times;</span>
 							<div>Title</div>
-							<div><input type="text" name="title" id="title"/></div>
+							<div><input class = "inputBox" type="text" name="title" id="title"/></div>
 							<div>Date</div>
 							<div><input type="datetime-local" name="date" id="date"/></div>
 							<div>Location</div>
-							<div><input type="text" name="location" id="location"/></div>
+							<div><input class = "inputBox" type="text" name="location" id="location"/></div>
 							<div>Description</div>
-							<div><textarea name="description" id="description"></textarea></div>
+							<div><textarea name="description" id="description" rows = "3" cols = "105"></textarea></div>
 							<div><button id="eventSubmit">Submit</button></div>
 							<div id="response"></div>
 							<input type="hidden" id="createdby" name="createdby" value="<?=$_SESSION['id']?>">
