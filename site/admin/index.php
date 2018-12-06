@@ -30,7 +30,6 @@
       //  include "../accountPage/_login.php";
         
  ?>
-<<<<<<< HEAD
 
 <!DOCTYPE html>
 <html>
@@ -68,7 +67,3 @@
         <?php include $_PATHS['_footer.php']; ?>
     </body>
 </html>
-=======
-</body>
-</html>
->>>>>>> 20b45c7a2d2a07d71e9c1fdfc134b1198195b60e
