@@ -6,8 +6,9 @@
 
         $db->exec($sql);
     }
-   function updateProfile($first, $last, $nick, $year, $season, $email, $aboutself){
+   function updateProfile($id, $first, $last, $nick, $year, $season, $email, $aboutself){
         $db = db_connect();
+        $id = $db->quote($id);
         $first = $db->quote($first);
         $last = $db->quote($last);
         $nick = $db->quote($nick);
@@ -18,7 +19,7 @@
 
         $sql = "UPDATE profile SET firstName = $first, lastName = $last, 
                 nickname = $nick, gradYear = $year, gradSeason = $season,
-                email = $email, bio = $aboutself";
+                email = $email, bio = $aboutself WHERE userid = $id";
                 
         $db->exec($sql);
 
