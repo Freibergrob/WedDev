@@ -22,6 +22,17 @@
                 email = $email, bio = $aboutself WHERE userid = $id";
                 
         $db->exec($sql);
-
+   }
+   function getProfile($id){
+        $db = db_connect();
+        $id = $db->quote($id);
+        try {
+            $rows = $db->query("SELECT * FROM profile WHERE userId = $id");
+            return $rows;
+        } catch (PDOException $e) {
+            print "Error!: " . $e->getMessage() . "<br/>";
+            db_disconnect();
+            die();
+        }
    }
  ?>
