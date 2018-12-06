@@ -9,20 +9,20 @@
 .hideItem {
     display: none;
 }
+
+.outer {
+    width: 100%;
+    text-align: center;
+}
+
 .wrapper {
-    width: 825px;
-    height: 200px;
-    padding: 15px;
-    background-color: rgb(236, 177, 14);
-    margin-top: 5%;
-    margin-left:9.6%;
+    padding-top: 50px;
     font-family: 'Varela Round', sans-serif;
     font-size: 100%;
-    border-radius: 4px;
 }
 .sectionForm {
-    width: 80%;
-    margin: 0 auto;
+    width: 60%;
+    margin: 25px auto;
   }
 .pagebtn {
     width: 200px;
