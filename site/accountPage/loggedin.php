@@ -47,6 +47,10 @@
     	<input type="text" id="nick" name="nick" class="nick" value="<?=$info[0]['nickname']?>">
 	</div>
 	<div>
+		<label for="email">Email</label>
+		<input type="text" id="email" name="email" value="<?=$info[0]['email']?>">
+	</div>
+	<div>
     	<label for="year">Graduation Year</label>
     	<select id="year" name="year">
     <?php
@@ -84,10 +88,6 @@
         <?php } else { ?>
             <input type="radio" id="spring" name="season" value="spring">
         <?php } ?>
-	</div>
-	<div>
-    	<label for="email">Email</label>
-    	<input type="text" id="email" name="email" value="<?=$info[0]['email']?>">
 	</div>
 	<div>
     	<label for="bio">Biography</label>

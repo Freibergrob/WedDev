@@ -47,14 +47,13 @@ a.nav-link:active {
     color: white;
 }
 
-div.disclaimer{
+div.footerWrapper {
     text-align: center;
-    margin-top: 15px;
 }
-
-div.validate{
-    text-align: center;
-    margin-top: 15px;
+div.footerSection {
+    display: inline-block;
+    text-align: left;
+    width: 80%;
 }
 
 .banner-container .banner {
