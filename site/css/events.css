@@ -178,8 +178,8 @@ caption {
   border: 1px solid #888;
   width: 40%;
 }
-.inputBox[type=text]{
-  width: 650px;
+.inputBox[type=text], textarea {
+  width: 100%;
   padding: 10px;
   margin: 5px auto;
   border: 1px solid #aaa;
@@ -187,7 +187,7 @@ caption {
   box-sizing: border-box;
 }
 #eventSubmit {
-  width: 650px;
+  width: 100%;
   background-color: black;
   color: white;
   padding: 10px;
