@@ -14,7 +14,7 @@
                 <script src="<?=$_PATHS['signup.js']?>"></script>
                 <?php
                 if($_SERVER["REQUEST_METHOD"] == "POST") {
-                    require_once $_PATHS['php'] . "createUser.php";
+                    require_once $_PATHS['createUser.php'];
                 } else {
                 ?>
                 <form action="<?=$_PATHS['link'] . "signupPage/"?>" method="post" onsubmit="return validate()">

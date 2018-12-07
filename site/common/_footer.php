@@ -5,5 +5,5 @@
     or representative of UWO Computer Science Club.
 </div>
 <div class="validate">
-    Validate <a href="http://validator.w3.org/check/referer">me</a>!
+    <a href="http://validator.w3.org/check/referer" target="_blank">Validate Me</a>!
 </div>

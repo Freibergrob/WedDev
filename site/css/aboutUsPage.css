@@ -38,11 +38,18 @@ p.aboutUsPar, .listBorder, .linkSection{
 
 .image{
   border-radius: 50%;
-  padding-left: 40px;
-  padding-right: 40px;
 }
 .titleAndName{
   text-decoration: underline;
   text-align: center;
   font-weight: bold;
+}
+.officerWrapper {
+    text-align: center;
+    border: 2px solid black;
+}
+.officerSection {
+    display: inline-block;
+    text-align: left;
+    width: 80%;
 }

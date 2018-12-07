@@ -1,6 +1,6 @@
 <?php
     date_default_timezone_set('America/Chicago');
-    include "../eventsPage/calendar.php";
+    include "calendar.php";
 
     if (isset($_POST["m"]) && isset($_POST["y"])) {
         $month = $_POST["m"];

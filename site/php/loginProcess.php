@@ -4,7 +4,6 @@ require_once $_PATHS['initialize.php'];
 
 $users = getUser($_POST["username"]);
 $usersArray = $users->fetchAll();
-#var_dump($user);
 
 if($users->rowCount()==0){
   $loginerror = "Authenication Failure!";

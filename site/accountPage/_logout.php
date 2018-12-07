@@ -1,5 +1,5 @@
-<?php 
-session_start(); 
+<?php
+session_start();
 
 $_SESSION["loggedin"] = false;
 $_SESSION["id"] = "";
@@ -9,13 +9,13 @@ $_SESSION["role"] = "";
 session_destroy();
 ?>
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
   <meta charset="UTF-8">
 		<?php require_once "../config.php";
 		      require_once $_PATHS['_meta.php']; ?>
 		<link rel="stylesheet" href="<?=$_PATHS['forms.css']?>">
-		<title>Computer Science Club</title> 
+		<title>Computer Science Club</title>
   </head>
   <body>
         <?php include $_PATHS['_header.php']; ?>
