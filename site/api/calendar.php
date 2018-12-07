@@ -51,11 +51,11 @@ function build_calendar($month,$year) {
           $calendar .= "<td class='day'>";
           $calendar .= "<div class='date'>" . $currentDay . "</div>";
           foreach($eventsArray as $event) {
-              if (date('j',strtotime($event['eDate'])) == $currentDay)
+              if (date('j',strtotime($event['eDate'], $firstDayOfMonth)) == $currentDay)
               {
                   $calendar .= "<div class='event'>";
                   $calendar .= "<div class='event-desc'>" . $event['title'] . "</div>";
-                  $calendar .= "<div class='event-time'>" . date('h:i A',strtotime($event['eDate'])) . "</div>";
+                  $calendar .= "<div class='event-time'>" . date('h:i A',strtotime($event['eDate'], $firstDayOfMonth)) . "</div>";
                   $calendar .= "</div>";
               }
           }
