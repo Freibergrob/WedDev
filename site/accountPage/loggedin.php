@@ -68,20 +68,22 @@
     	</select>
 	</div>
 	<div>
+		<label for="fall">Fall</label>
     <?php
-        if ($info[0]['gradSeason'] === "fall"){ ?>
+        if ($info[0]['gradSeason'] != "spring"){ ?>
             <input type="radio" id="fall" name="season" value="fall" checked="T">
         <?php } else { ?>
             <input type="radio" id="fall" name="season" value="fall">
         <?php } ?>
-        <label for="fall">Fall</label>
+    </div>
+	<div>
+		<label for="spring">Spring</label>
         <?php
         if ($info[0]['gradSeason'] === "spring"){ ?>
             <input type="radio" id="spring" name="season" value="spring" checked="T">
         <?php } else { ?>
             <input type="radio" id="spring" name="season" value="spring">
         <?php } ?>
-    	<label for="spring">Spring</label>
 	</div>
 	<div>
     	<label for="email">Email</label>
