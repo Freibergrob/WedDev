@@ -23,8 +23,12 @@ p.error {
   text-align: center;
 }
 
+textarea{
+  width: 100%;
+}
+
 .wrapper {
-    width: 400px;
+    width: 100%;
     height: 400px;
     padding: 13px;
     background-color: rgb(236, 177, 14);
@@ -34,8 +38,12 @@ p.error {
     border-radius: 4px;
 }
 
+input[type=text], input[type=password]{
+width: 100%;
+}
+
 input[type=submit] {
-   width: 150px;
+   width: 100%;
    background-color: black;
    color: white;
    padding: 10px;
@@ -58,7 +66,7 @@ label {
 }
 
 input[type=text], select, input[type=password] {
-   width: 400px;
+   width: 100%;
    padding: 8px;
    margin: 4px 0;
    border: 1px solid #aaa;
