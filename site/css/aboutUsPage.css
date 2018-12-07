@@ -53,3 +53,7 @@ p.aboutUsPar, .listBorder, .linkSection{
     text-align: left;
     width: 80%;
 }
+.officerLinks {
+    margin-top: 10px;
+    margin-bottom: 3px;
+}
