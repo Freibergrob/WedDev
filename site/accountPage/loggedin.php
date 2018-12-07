@@ -12,6 +12,14 @@
 <div class="main">
 <?php 
     include $_PATHS['_header.php'];
+    if(!isset($_SESSION["loggedin"])) {
+        header("Location: " . "index.php");
+    }
+
+    if($_SESSION["loggedin"] != true) {
+        header("Location: " . "index.php");
+    }
+
     require_once $_PATHS['initialize.php'];
     if ($_SERVER['REQUEST_METHOD'] === 'POST'){
         updateProfile($_SESSION['id'], $_POST['first'], 
@@ -48,11 +56,21 @@
     <?php
         }
     ?>
-    </select>
-    <label for="fall">Fall</label
-    <input type="radio" id="fall" name="season" value="fall">
-    <label for="spring">Spring</label>
-    <input type="radio" id="spring" name="season" value="spring">
+    </select><br>
+    <?php 
+        if ($info[0]['gradSeason'] === "fall"){ ?>
+            <input type="radio" id="fall" name="season" value="fall" checked="T">
+        <?php } else { ?>
+            <input type="radio" id="fall" name="season" value="fall">
+        <?php } ?>
+        <label for="fall">Fall</label><br>
+        <?php
+        if ($info[0]['gradSeason'] === "spring"){ ?>
+            <input type="radio" id="spring" name="season" value="spring" checked="T">
+        <?php } else { ?>
+            <input type="radio" id="spring" name="season" value="spring">
+        <?php } ?>
+    <label for="spring">Spring</label><br>
     <label for="email">Email</label>
     <input type="input" id="email" name="email" value="<?=$info[0]['email']?>">
     <label for="bio">Biography</label>
