@@ -52,6 +52,11 @@ div.disclaimer{
     margin-top: 15px;
 }
 
+div.validate{
+    text-align: center;
+    margin-top: 15px;
+}
+
 .banner-container .banner {
     width: 100%;
 }
