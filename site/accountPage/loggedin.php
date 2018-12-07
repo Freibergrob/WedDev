@@ -5,7 +5,7 @@
 		<?php require_once "../config.php";
 			  require_once $_PATHS['_meta.php']; ?>
         <link rel="stylesheet" href="<?=$_PATHS['common.css']?>">
-		<link rel="stylesheet" href="<?=$_PATHS['loggedin.css']?>">
+		<link rel="stylesheet" href="<?=$_PATHS['forms.css']?>">
 		<title>Computer Science Club</title>
 	</head>
 	<body>
@@ -34,14 +34,21 @@
 ?>
 <p>
 <form action="loggedin.php" method="POST">
-    <label for="first">First Name</label>
-    <input type="input" id="first" name="first" class="first" value="<?=$info[0]['firstName']?>">
-    <label for="last">Last Name</label>
-    <input type="input" id="last" name="last" class="last" value="<?=$info[0]['lastName']?>">
-    <label for="nick">Nickname</label>
-    <input type="input" id="nick" name="nick" class="nick" value="<?=$info[0]['nickname']?>">
-    <label for="year">Graduation Year</label>
-    <select id="year" name="year">
+	<div>
+    	<label for="first">First Name</label>
+    	<input type="text" id="first" name="first" class="first" value="<?=$info[0]['firstName']?>">
+	</div>
+	<div>
+    	<label for="last">Last Name</label>
+    	<input type="text" id="last" name="last" class="last" value="<?=$info[0]['lastName']?>">
+	</div>
+	<div>
+    	<label for="nick">Nickname</label>
+    	<input type="text" id="nick" name="nick" class="nick" value="<?=$info[0]['nickname']?>">
+	</div>
+	<div>
+    	<label for="year">Graduation Year</label>
+    	<select id="year" name="year">
     <?php
         for ($i = 2018; $i < 2031; $i++) {
             if ($i == $info[0]['gradYear']) {
@@ -58,27 +65,36 @@
     <?php
         }
     ?>
-    </select><br>
+    	</select>
+	</div>
+	<div>
     <?php
         if ($info[0]['gradSeason'] === "fall"){ ?>
             <input type="radio" id="fall" name="season" value="fall" checked="T">
         <?php } else { ?>
             <input type="radio" id="fall" name="season" value="fall">
         <?php } ?>
-        <label for="fall">Fall</label><br>
+        <label for="fall">Fall</label>
         <?php
         if ($info[0]['gradSeason'] === "spring"){ ?>
             <input type="radio" id="spring" name="season" value="spring" checked="T">
         <?php } else { ?>
             <input type="radio" id="spring" name="season" value="spring">
         <?php } ?>
-    <label for="spring">Spring</label><br>
-    <label for="email">Email</label>
-    <input type="input" id="email" name="email" value="<?=$info[0]['email']?>">
-    <label for="bio">Biography</label>
-    <textarea rows="4" cols="63" name="aboutself"><?=$info[0]['bio']?></textarea><br>
-    <input type="submit" value="submit"><br>
-	<p><?=$resultMsg?></p>
+    	<label for="spring">Spring</label>
+	</div>
+	<div>
+    	<label for="email">Email</label>
+    	<input type="text" id="email" name="email" value="<?=$info[0]['email']?>">
+	</div>
+	<div>
+    	<label for="bio">Biography</label>
+    	<textarea rows="4" cols="63" name="aboutself"><?=$info[0]['bio']?></textarea><br>
+	</div>
+	<div>
+    	<input type="submit" value="submit"><br>
+		<p><?=$resultMsg?></p>
+	</div>
 </form>
 </p>
 <?php include $_PATHS['_footer.php']; ?>
