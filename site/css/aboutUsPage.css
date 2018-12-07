@@ -3,7 +3,6 @@
   padding: 10px;
 }
 .aboutUs{
-  background-color: #d79a27;
   margin: auto;
   padding: 10px;
 }
@@ -47,6 +46,8 @@ p.aboutUsPar, .listBorder, .linkSection{
 .officerWrapper {
     text-align: center;
     border: 2px solid black;
+    background-color: grey;
+    color: white;
 }
 .officerSection {
     display: inline-block;
