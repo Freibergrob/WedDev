@@ -27,6 +27,7 @@
                 if ($_POST['action'] === "pageUpdate") {
                     UpdatePageContent($_POST['page'],$_POST['section'], $_POST['sectionData']);
                 } else {
+                    //This code section was provided by Hannah Hillberg
                     if ($_SERVER["REQUEST_METHOD"] == "POST") {
                        $upload_dir = "uploads";
                        if ($_FILES["fileToUpload"]["error"] == UPLOAD_ERR_OK) {
