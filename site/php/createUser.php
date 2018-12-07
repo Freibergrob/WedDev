@@ -9,4 +9,4 @@
 
 ?>
 
-<p>Account Created!  Click <a href="index.php?nav=account">Here</a> to Login now!
+<p>Account Created!  Click <a href="<?=$_PATHS['link']?>accountPage/">Here</a> to Login now!

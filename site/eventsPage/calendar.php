@@ -19,7 +19,7 @@ function build_calendar($month,$year) {
      $monthName = $dateComponents['month'];
      $dayOfWeek = $dateComponents['wday'];
      $calendar .= "<table id='calendar'>";
-     $calendar .= "<caption>" . $monthName . " " . $year . "</caption>";
+     $calendar .= "<caption><button id='monthUp' onclick='setVals(-1)'>-</button>" . $monthName . " " . $year . "<button id='monthUp' onclick='setVals(1)'>+</button></caption>";
      $calendar .= "<tr class='weekdays'>";
 
      foreach($daysOfWeek as $day) {

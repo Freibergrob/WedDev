@@ -15,8 +15,6 @@
                     $loginerror = "";
 
                     if($_SERVER["REQUEST_METHOD"] == "POST") {
-                        #require_once $_PATHS['db'] . "config.php";
-                        #require_once $_PATHS['db'] . "user.php";
                         include $_PATHS['loginProcess.php'];
                     }
 
