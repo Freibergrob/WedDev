@@ -30,7 +30,9 @@
     
     $info = getProfile($_SESSION['id'])->fetchAll();
 ?>
+
 <p>
+<div class="wrapper">
 <form action="loggedin.php" method="POST">
     <label for="first">First Name</label>
     <input type="input" id="first" name="first" class="first" value="<?=$info[0]['firstName']?>">
@@ -59,25 +61,29 @@
     </select><br>
     <?php 
         if ($info[0]['gradSeason'] === "fall"){ ?>
+            <label for="fall">Fall</label>
             <input type="radio" id="fall" name="season" value="fall" checked="T">
         <?php } else { ?>
+            <label for="fall">Fall</label>
             <input type="radio" id="fall" name="season" value="fall">
         <?php } ?>
-        <label for="fall">Fall</label><br>
+            <br>
         <?php
         if ($info[0]['gradSeason'] === "spring"){ ?>
-            <input type="radio" id="spring" name="season" value="spring" checked="T">
+            <label for="spring">Spring</label><input type="radio" id="spring" name="season" value="spring" checked="T">
         <?php } else { ?>
-            <input type="radio" id="spring" name="season" value="spring">
+            <label for="spring">Spring</label><input type="radio" id="spring" name="season" value="spring">
         <?php } ?>
-    <label for="spring">Spring</label><br>
+    <br>
     <label for="email">Email</label>
     <input type="input" id="email" name="email" value="<?=$info[0]['email']?>">
     <label for="bio">Biography</label>
     <textarea rows="4" cols="63" name="aboutself"><?=$info[0]['bio']?></textarea><br>
-    <input type="submit" value="submit">
-</form>
+    <input type="submit" id="submit" value="Submit">
+    </form>
+    </div>
 </p>
+<div>
 <?php include $_PATHS['_footer.php']; ?>
 </div>
 </body>
