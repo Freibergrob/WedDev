@@ -12,6 +12,26 @@
     margin-bottom: 2px;
  }
 
+ #monthU, #monthD {
+     width: 40px;
+     background-color: black;
+     color: white;
+     padding: 10px;
+     margin: 10px ;
+     border: none;
+     border-radius: 4px;
+     cursor: pointer;
+     font-family: 'Varela Round', sans-serif;
+     font-size: 125%;
+     margin-bottom: 2px;
+     text-align: center;
+ }
+
+ .adjM {
+     margin-left: 30px;
+     margin-right: 30px;
+ }
+
 #calendar {
 	width: 100%;
   display: grid;
@@ -185,7 +205,7 @@ caption {
     float: right;
     font-size: 28px;
     font-weight: bold;
-    
+
 }
 
 .close:hover,

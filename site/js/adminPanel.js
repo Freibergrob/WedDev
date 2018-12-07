@@ -38,6 +38,7 @@ tinymce.init({
 });
 
 function displaySections() {
+    document.getElementById("resultMsg").innerHTML = "";
     if (currentPage != "") {
         $("[data-page='" + currentPage + "']").each(function() {
             $(this).addClass('hideItem');

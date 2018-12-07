@@ -4,13 +4,14 @@
 		<meta charset="UTF-8">
 		<?php require_once "../config.php";
 			  require_once $_PATHS['_meta.php']; ?>
-        <link rel="stylesheet" href="<?=$_PATHS['common.css']?>">   
+        <link rel="stylesheet" href="<?=$_PATHS['common.css']?>">
 		<link rel="stylesheet" href="<?=$_PATHS['loggedin.css']?>">
 		<title>Computer Science Club</title>
 	</head>
 	<body>
 <div class="main">
-<?php 
+<?php
+	$resultMsg = "";
     include $_PATHS['_header.php'];
     if(!isset($_SESSION["loggedin"])) {
         header("Location: " . "index.php");
@@ -22,12 +23,13 @@
 
     require_once $_PATHS['initialize.php'];
     if ($_SERVER['REQUEST_METHOD'] === 'POST'){
-        updateProfile($_SESSION['id'], $_POST['first'], 
-                      $_POST['last'], $_POST['nick'], 
+        updateProfile($_SESSION['id'], $_POST['first'],
+                      $_POST['last'], $_POST['nick'],
                       $_POST['year'], $_POST['season'],
                       $_POST['email'], $_POST['aboutself']);
+		$resultMsg="Profile Updated!";
     }
-    
+
     $info = getProfile($_SESSION['id'])->fetchAll();
 ?>
 <p>
@@ -52,12 +54,12 @@
     <?php
             }
     ?>
-        
+
     <?php
         }
     ?>
     </select><br>
-    <?php 
+    <?php
         if ($info[0]['gradSeason'] === "fall"){ ?>
             <input type="radio" id="fall" name="season" value="fall" checked="T">
         <?php } else { ?>
@@ -75,7 +77,8 @@
     <input type="input" id="email" name="email" value="<?=$info[0]['email']?>">
     <label for="bio">Biography</label>
     <textarea rows="4" cols="63" name="aboutself"><?=$info[0]['bio']?></textarea><br>
-    <input type="submit" value="submit">
+    <input type="submit" value="submit"><br>
+	<p><?=$resultMsg?></p>
 </form>
 </p>
 <?php include $_PATHS['_footer.php']; ?>
